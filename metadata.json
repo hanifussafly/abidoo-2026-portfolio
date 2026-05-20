@@ -1,0 +1,6 @@
+{
+  "name": "Design Portfolio",
+  "description": "Minimalist grid-aligned personal design portfolio with scroll animations and accessibility features.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
