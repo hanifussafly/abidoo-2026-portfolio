@@ -90,8 +90,20 @@ export default function Footer() {
         
         {/* Full width: Giant Name */}
         <div className="w-full px-4 text-center select-none">
-          <h2 className="font-display font-bold text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl tracking-[0.05em] lowercase outlined-text select-none text-zinc-200/40 dark:text-zinc-850/15">
-            abid hanifussafly
+          <h2 className="font-display font-bold text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl tracking-[0.05em] lowercase outlined-text select-none text-zinc-200/40 dark:text-zinc-850/15 flex justify-center flex-wrap">
+            {Array.from("abid hanifussafly").map((char, index) => (
+              <motion.span
+                key={index}
+                className="inline-block cursor-default select-none transition-colors duration-150"
+                whileHover={{
+                  color: "#f97316",
+                  WebkitTextStrokeColor: "#f97316",
+                }}
+                transition={{ duration: 0.15, ease: "easeOut" }}
+              >
+                {char === " " ? "\u00A0" : char}
+              </motion.span>
+            ))}
           </h2>
         </div>
 

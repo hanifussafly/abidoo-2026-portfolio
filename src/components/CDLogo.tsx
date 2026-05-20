@@ -41,7 +41,7 @@ export default function CDLogo() {
               }}
               whileHover={isFilled ? { 
                 scale: 1.25, 
-                backgroundColor: '#3b82f6', // Tailwind blue-500
+                backgroundColor: '#f97316', // Tailwind orange-500
                 transition: { duration: 0.1 } 
               } : undefined}
               className={`w-2 h-2 sm:w-3 sm:h-3 md:w-5 md:h-5 transition-colors duration-200 ${
