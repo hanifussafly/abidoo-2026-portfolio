@@ -4,7 +4,7 @@
  */
 
 import { useState, useEffect } from 'react';
-import { Volume2, Check, Copy, MapPin, Phone, Mail, Link as LinkIcon, HelpCircle, Clock, CheckCircle2, Terminal } from 'lucide-react';
+import { Volume2, Check, Copy, MapPin, Phone, Mail, Link as LinkIcon, HelpCircle, Clock, CheckCircle2, Terminal, Shield, ShieldCheck } from 'lucide-react';
 import { motion, AnimatePresence } from 'motion/react';
 import CDLogo from './CDLogo.tsx';
 import InteractiveAvatar from './InteractiveAvatar.tsx';
@@ -21,6 +21,10 @@ export default function Hero() {
   const [currentTime, setCurrentTime] = useState('');
   const [copiedBubble, setCopiedBubble] = useState(false);
   const [carouselIndex, setCarouselIndex] = useState(0);
+  
+  // Privacy states to protect contact info from automated spam-bots
+  const [isEmailRevealed, setIsEmailRevealed] = useState(false);
+  const [isPhoneRevealed, setIsPhoneRevealed] = useState(false);
 
   // Auto-rotate the profile subheader carousel
   useEffect(() => {
@@ -220,29 +224,49 @@ export default function Hero() {
 
             {/* Email Address */}
             <button 
-              onClick={() => copyToClipboard(contactInfo.email, 'Email address')}
-              className="w-full flex justify-between items-center border-b border-zinc-200 dark:border-zinc-800 px-5 py-3 hover:bg-orange-50/5 hover:text-orange-500 group text-left cursor-copy transition-colors"
-              title="Click to copy email"
-              aria-label={`Copy email: ${contactInfo.email}`}
+              onClick={() => {
+                setIsEmailRevealed(true);
+                copyToClipboard(contactInfo.email, 'Email address');
+              }}
+              className="w-full flex justify-between items-center border-b border-zinc-200 dark:border-zinc-800 px-5 py-3 hover:bg-orange-50/5 hover:text-orange-500 group text-left cursor-pointer transition-colors"
+              title={isEmailRevealed ? "Click to copy email address" : "Click to unmask & copy email"}
+              aria-label={isEmailRevealed ? `Email: ${contactInfo.email}` : "Click to expose & copy email address"}
             >
-              <span className="text-zinc-400 group-hover:text-orange-400">Email</span>
-              <span className="text-zinc-900 dark:text-zinc-100 group-hover:text-orange-500 font-mono text-xs flex items-center gap-1.5 font-medium">
-                {contactInfo.email}
-                <Copy className="w-3.5 h-3.5 text-zinc-400 dark:text-zinc-505 group-hover:text-orange-500 transition-colors shrink-0" />
+              <span className="text-zinc-400 group-hover:text-orange-400 flex items-center gap-1.5">
+                <span>Email</span>
+                {!isEmailRevealed ? (
+                  <Shield className="w-3 h-3 text-zinc-350 dark:text-zinc-650 group-hover:text-orange-400/80 transition-colors shrink-0" title="Protected from scrapers" />
+                ) : (
+                  <ShieldCheck className="w-3 h-3 text-green-500 shrink-0" title="Decrypted successfully" />
+                )}
+              </span>
+              <span className="text-zinc-900 dark:text-zinc-100 group-hover:text-orange-500 font-mono text-xs flex items-center gap-1.5 font-medium select-none">
+                {isEmailRevealed ? contactInfo.email : "hani••••••••••••@gmail.com"}
+                <Copy className="w-3.5 h-3.5 text-zinc-400 dark:text-zinc-600 group-hover:text-orange-500 transition-colors shrink-0" />
               </span>
             </button>
 
             {/* Phone */}
             <button 
-              onClick={() => copyToClipboard(contactInfo.phone, 'Phone number')}
-              className="w-full flex justify-between items-center px-5 py-3 hover:bg-orange-50/5 hover:text-orange-500 group text-left cursor-copy transition-colors h-full min-h-[44px]"
-              title="Click to copy phone to clipboard"
-              aria-label={`Copy phone: ${contactInfo.phone}`}
+              onClick={() => {
+                setIsPhoneRevealed(true);
+                copyToClipboard(contactInfo.phone, 'Phone number');
+              }}
+              className="w-full flex justify-between items-center px-5 py-3 hover:bg-orange-50/5 hover:text-orange-500 group text-left cursor-pointer transition-colors h-full min-h-[44px]"
+              title={isPhoneRevealed ? "Click to copy phone number" : "Click to unmask & copy phone number"}
+              aria-label={isPhoneRevealed ? `Phone: ${contactInfo.phone}` : "Click to expose & copy phone number"}
             >
-              <span className="text-zinc-400 group-hover:text-orange-400">Phone</span>
-              <span className="text-zinc-900 dark:text-zinc-100 group-hover:text-orange-500 font-mono text-xs flex items-center gap-1.5 transition-all font-medium">
-                {contactInfo.phone}
-                <Copy className="w-3.5 h-3.5 text-zinc-400 dark:text-zinc-505 group-hover:text-orange-500 transition-colors shrink-0" />
+              <span className="text-zinc-400 group-hover:text-orange-400 flex items-center gap-1.5">
+                <span>Phone</span>
+                {!isPhoneRevealed ? (
+                  <Shield className="w-3 h-3 text-zinc-350 dark:text-zinc-650 group-hover:text-orange-400/80 transition-colors shrink-0" title="Protected from scrapers" />
+                ) : (
+                  <ShieldCheck className="w-3 h-3 text-green-500 shrink-0" title="Decrypted successfully" />
+                )}
+              </span>
+              <span className="text-zinc-900 dark:text-zinc-100 group-hover:text-orange-500 font-mono text-xs flex items-center gap-1.5 transition-all font-medium select-none">
+                {isPhoneRevealed ? contactInfo.phone : "+62 896-••••-••••"}
+                <Copy className="w-3.5 h-3.5 text-zinc-400 dark:text-zinc-600 group-hover:text-orange-500 transition-colors shrink-0" />
               </span>
             </button>
 
