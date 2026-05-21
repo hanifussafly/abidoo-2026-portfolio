@@ -12,9 +12,10 @@ interface HeaderProps {
   dark: boolean;
   toggleTheme: () => void;
   showLogo?: boolean;
+  onHomeClick?: () => void;
 }
 
-export default function Header({ onSearchOpen, dark, toggleTheme, showLogo = false }: HeaderProps) {
+export default function Header({ onSearchOpen, dark, toggleTheme, showLogo = false, onHomeClick }: HeaderProps) {
   return (
     <header className="w-full border-b border-zinc-200 dark:border-zinc-800 bg-white/80 dark:bg-zinc-950/85 backdrop-blur-md sticky top-0 z-40 transition-colors duration-300">
       <div className="max-w-5xl mx-auto flex items-center justify-between h-14 border-x border-zinc-200 dark:border-zinc-800 px-6 bg-white dark:bg-zinc-950">
@@ -23,6 +24,11 @@ export default function Header({ onSearchOpen, dark, toggleTheme, showLogo = fal
         <div className="flex items-center gap-6">
           <a 
             href="#root" 
+            onClick={(e) => {
+              if (onHomeClick) {
+                onHomeClick();
+              }
+            }}
             className="hidden"
             aria-label="Abid Hanifussafly Portfolio Home"
           >
@@ -33,18 +39,27 @@ export default function Header({ onSearchOpen, dark, toggleTheme, showLogo = fal
           <nav className="hidden sm:flex items-center gap-5" aria-label="Main Navigation">
             <a 
               href="#about" 
+              onClick={() => {
+                if (onHomeClick) onHomeClick();
+              }}
               className="hover:text-zinc-950 dark:hover:text-zinc-50 transition-colors text-zinc-500 dark:text-zinc-400 font-sans text-xs font-semibold tracking-wider uppercase focus-visible:outline-blue-500 rounded"
             >
               About
             </a>
             <a 
               href="#case-studies" 
+              onClick={() => {
+                if (onHomeClick) onHomeClick();
+              }}
               className="hover:text-zinc-950 dark:hover:text-zinc-50 transition-colors text-zinc-500 dark:text-zinc-400 font-sans text-xs font-semibold tracking-wider uppercase focus-visible:outline-blue-500 rounded"
             >
               Case Studies
             </a>
             <a 
               href="#experience" 
+              onClick={() => {
+                if (onHomeClick) onHomeClick();
+              }}
               className="hover:text-zinc-950 dark:hover:text-zinc-50 transition-colors text-zinc-500 dark:text-zinc-400 font-sans text-xs font-semibold tracking-wider uppercase focus-visible:outline-blue-500 rounded"
             >
               Experience

@@ -30,7 +30,7 @@ export default function InteractiveAvatar() {
 
       {/* Floating text badge */}
       <div className="absolute bottom-3 left-1/2 -translate-x-1/2 opacity-0 group-hover:opacity-100 transition-opacity duration-300 z-10 pointer-events-none">
-        <span className="bg-zinc-900/90 dark:bg-zinc-50/90 text-white dark:text-zinc-950 font-mono text-[9px] font-bold py-1 px-2.5 rounded tracking-wider uppercase shadow-md">
+        <span className="bg-zinc-900/90 dark:bg-zinc-50/90 text-white dark:text-zinc-950 font-mono text-[9px] font-bold py-1 px-2.5 rounded-none tracking-wider uppercase">
           SAY HELLO 👋
         </span>
       </div>
@@ -40,7 +40,7 @@ export default function InteractiveAvatar() {
         <motion.div
           initial={{ opacity: 0, scale: 0.8, y: 15 }}
           animate={{ opacity: 1, scale: 1, y: 0 }}
-          className="absolute bottom-12 bg-zinc-950/95 dark:bg-zinc-50/95 text-white dark:text-zinc-900 text-[10px] font-mono py-1.5 px-3 rounded shadow-xl border border-zinc-850 dark:border-zinc-200 z-20 pointer-events-none text-center"
+          className="absolute bottom-12 bg-zinc-950/95 dark:bg-zinc-50/95 text-white dark:text-zinc-900 text-[10px] font-mono py-1.5 px-3 rounded-none border border-zinc-850 dark:border-zinc-200 z-20 pointer-events-none text-center"
         >
           Yo! How's it going?
         </motion.div>

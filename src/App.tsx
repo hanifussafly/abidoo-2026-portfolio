@@ -13,11 +13,18 @@ import Experience from './components/Experience.tsx';
 import Writing from './components/Writing.tsx';
 import Footer from './components/Footer.tsx';
 import CommandPalette from './components/CommandPalette.tsx';
+import CaseStudyEZC from './components/CaseStudyEZC.tsx';
+import CaseStudyFV from './components/CaseStudyFV.tsx';
+import CaseStudyTelkom from './components/CaseStudyTelkom.tsx';
+import CaseStudyDuck from './components/CaseStudyDuck.tsx';
+import CaseStudyMola from './components/CaseStudyMola.tsx';
+import CaseStudyNiagahoster from './components/CaseStudyNiagahoster.tsx';
 
 export default function App() {
   const [dark, setDark] = useState(false);
   const [isSearchOpen, setIsSearchOpen] = useState(false);
   const [showLogo, setShowLogo] = useState(false);
+  const [activeArticle, setActiveArticle] = useState<string | null>(null);
 
   // Synchronize light/dark theme with local storage and html class list
   useEffect(() => {
@@ -89,6 +96,7 @@ export default function App() {
         dark={dark} 
         toggleTheme={toggleTheme} 
         showLogo={showLogo}
+        onHomeClick={() => setActiveArticle(null)}
       />
 
       {/* Center Drafting Board central layout container of width 5xl */}
@@ -97,54 +105,88 @@ export default function App() {
         {/* Core Content */}
         <main id="main-content" className="relative z-10 w-full">
           
-          {/* Section 1: Top cd pixel logo, avatar photo banner, contact credentials */}
-          <motion.div
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            transition={{ duration: 0.5 }}
-          >
-            <Hero />
-          </motion.div>
+          {activeArticle === 'ezc-onboarding' ? (
+            <CaseStudyEZC 
+              onBack={() => setActiveArticle(null)} 
+              onNavigateCase={(slug) => setActiveArticle(slug)}
+            />
+          ) : activeArticle === 'fashionvalet' ? (
+            <CaseStudyFV 
+              onBack={() => setActiveArticle(null)} 
+              onNavigateCase={(slug) => setActiveArticle(slug)}
+            />
+          ) : activeArticle === 'telkom-university' ? (
+            <CaseStudyTelkom 
+              onBack={() => setActiveArticle(null)} 
+              onNavigateCase={(slug) => setActiveArticle(slug)}
+            />
+          ) : activeArticle === 'duck-research' ? (
+            <CaseStudyDuck 
+              onBack={() => setActiveArticle(null)} 
+              onNavigateCase={(slug) => setActiveArticle(slug)}
+            />
+          ) : activeArticle === 'mola-tv' ? (
+            <CaseStudyMola 
+              onBack={() => setActiveArticle(null)} 
+              onNavigateCase={(slug) => setActiveArticle(slug)}
+            />
+          ) : activeArticle === 'niagahoster' ? (
+            <CaseStudyNiagahoster
+              onBack={() => setActiveArticle(null)}
+              onNavigateCase={(slug) => setActiveArticle(slug)}
+            />
+          ) : (
+            <>
+              {/* Section 1: Top cd pixel logo, avatar photo banner, contact credentials */}
+              <motion.div
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 1 }}
+                transition={{ duration: 0.5 }}
+              >
+                <Hero />
+              </motion.div>
 
-          {/* Section 2: Social grid links */}
-          <motion.div
-            initial={{ opacity: 0, y: 30 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true, margin: "-100px" }}
-            transition={{ duration: 0.6, ease: "easeOut" }}
-          >
-            <Socials />
-          </motion.div>
+              {/* Section 2: Social grid links */}
+              <motion.div
+                initial={{ opacity: 0, y: 30 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true, margin: "-100px" }}
+                transition={{ duration: 0.6, ease: "easeOut" }}
+              >
+                <Socials />
+              </motion.div>
 
-          {/* Section 3: Descriptive text highlight */}
-          <motion.div
-            initial={{ opacity: 0, y: 30 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true, margin: "-100px" }}
-            transition={{ duration: 0.6, ease: "easeOut" }}
-          >
-            <About />
-          </motion.div>
+              {/* Section 3: Descriptive text highlight */}
+              <motion.div
+                initial={{ opacity: 0, y: 30 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true, margin: "-100px" }}
+                transition={{ duration: 0.6, ease: "easeOut" }}
+              >
+                <About />
+              </motion.div>
 
-          {/* Section 4: Expandable listing of blogs (Case Studies) */}
-          <motion.div
-            initial={{ opacity: 0, y: 30 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true, margin: "-100px" }}
-            transition={{ duration: 0.6, ease: "easeOut" }}
-          >
-            <Writing />
-          </motion.div>
+              {/* Section 4: Expandable listing of blogs (Case Studies) */}
+              <motion.div
+                initial={{ opacity: 0, y: 30 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true, margin: "-100px" }}
+                transition={{ duration: 0.6, ease: "easeOut" }}
+              >
+                <Writing onSelectArticle={(slug) => setActiveArticle(slug)} />
+              </motion.div>
 
-          {/* Section 5: Expandable timelines for job histories */}
-          <motion.div
-            initial={{ opacity: 0, y: 30 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true, margin: "-100px" }}
-            transition={{ duration: 0.6, ease: "easeOut" }}
-          >
-            <Experience />
-          </motion.div>
+              {/* Section 5: Expandable timelines for job histories */}
+              <motion.div
+                initial={{ opacity: 0, y: 30 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true, margin: "-100px" }}
+                transition={{ duration: 0.6, ease: "easeOut" }}
+              >
+                <Experience />
+              </motion.div>
+            </>
+          )}
 
         </main>
 

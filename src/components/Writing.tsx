@@ -7,7 +7,11 @@ import { motion, AnimatePresence } from 'motion/react';
 import { ArrowUpRight, Star } from 'lucide-react';
 import { articlesData } from '../data.ts';
 
-export default function Writing() {
+interface WritingProps {
+  onSelectArticle?: (slug: string) => void;
+}
+
+export default function Writing({ onSelectArticle }: WritingProps) {
   return (
     <section id="case-studies" aria-label="Abid's Case Studies & Portfolios" className="w-full">
       <div className="grid grid-cols-1 md:grid-cols-12 border-b border-zinc-200 dark:border-zinc-800">
@@ -42,11 +46,34 @@ export default function Writing() {
                 <motion.a
                   key={article.title}
                   href={article.url}
+                  onClick={(e) => {
+                    if (onSelectArticle) {
+                      if (article.title.toLowerCase().includes('ezcoordinator')) {
+                        e.preventDefault();
+                        onSelectArticle('ezc-onboarding');
+                      } else if (article.title.toLowerCase().includes('fashionvalet')) {
+                        e.preventDefault();
+                        onSelectArticle('fashionvalet');
+                      } else if (article.title.toLowerCase().includes('telkom')) {
+                        e.preventDefault();
+                        onSelectArticle('telkom-university');
+                      } else if (article.title.toLowerCase().includes('duck')) {
+                        e.preventDefault();
+                        onSelectArticle('duck-research');
+                      } else if (article.title.toLowerCase().includes('mola')) {
+                        e.preventDefault();
+                        onSelectArticle('mola-tv');
+                      } else if (article.title.toLowerCase().includes('niagahoster')) {
+                        e.preventDefault();
+                        onSelectArticle('niagahoster');
+                      }
+                    }
+                  }}
                   initial={{ opacity: 0, y: 10 }}
                   animate={{ opacity: 1, y: 0 }}
                   exit={{ opacity: 0, y: -10 }}
                   transition={{ delay: index * 0.04, duration: 0.35 }}
-                  className="group flex items-center justify-between p-5 hover:bg-zinc-50/70 dark:hover:bg-zinc-900/15 transition-all select-none border-b border-zinc-200 dark:border-zinc-800 last:border-b-0 focus-visible:outline-blue-500"
+                  className="group flex items-center justify-between p-5 hover:bg-zinc-50/70 dark:hover:bg-zinc-900/15 transition-all select-none border-b border-zinc-200 dark:border-zinc-800 last:border-b-0 focus-visible:outline-blue-500 cursor-pointer"
                   aria-label={`Read ${article.title} by ${article.author}`}
                 >
                   <div className="flex items-center gap-4.5 min-w-0">

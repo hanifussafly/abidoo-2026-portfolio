@@ -68,18 +68,10 @@ export const experienceData: ExperienceItem[] = [
         type: 'Freelance',
         duration: '01.2020 - current',
         length: '6y 5m',
-        tags: ['UX Design', 'Product Design', 'B2B', 'Fintech', 'Edutech', 'Real Estate', 'Design Systems'],
+        tags: ['Product Design', 'User Experience (UX)', 'User Interface (UI) Design', 'Mobile Design', 'Design Systems', 'Figma'],
         details: [
-          'Delivered conversion-focused UX for B2B and consumer products used across Europe, the UK, and Southeast Asia.',
-          'Improved activation, usability, and feature discoverability through data-informed UX and onboarding design.',
-          'Reduced design-to-development friction by building scalable design systems and working tightly with engineers.',
-          'Shipped high-impact web and mobile experiences, balancing speed, clarity, and business goals.',
-          'Designed intuitive banking and transaction flows for regulated fintech products.',
-          'Simplified complex dashboards into actionable insights for marketing and operations teams.',
-          'Enabled faster product decisions through structured design exploration and systemized UI patterns.',
-          'Launched and scaled MyTel-U super apps and internal systems serving 15,000+ users.',
-          'Built and governed multi-product design systems, cutting delivery time and improving consistency.',
-          'Improved operational efficiency and data accuracy across large academic and institutional ecosystems.'
+          'Delivered conversion-focused UX/UI for B2B, Fintech, and consumer products across Europe, the UK, and Southeast Asia.',
+          'Launched and scaled the MyTel-U academic super-app and multi-product design systems serving over 15,000+ active users.'
         ],
       },
     ],
@@ -96,13 +88,10 @@ export const experienceData: ExperienceItem[] = [
         type: 'Full-time',
         duration: '06.2025 - 12.2025',
         length: '6m',
-        tags: ['Ninode Flow', 'Figma Collaboration', 'Guardian Feature', 'Wearable', 'Blu by BCA'],
+        tags: ['User Experience (UX)', 'User Interface (UI) Design', 'Figma', 'Mobile Applications', 'E-Health', 'Collaboration'],
         details: [
-          'Streamlined design collaboration across design, product, and system analyst teams by introducing Ninode flow for simplified UI flows, and creating lightweight, performance-optimized Figma files and improving design efficiency and reducing handoff friction.',
-          'Enhanced the user experience of the Prodia app’s Guardian feature, tailoring the flow and interface for underage users and their parents/guardians, ensuring compliance with UX best practices and sensitive data handling.',
-          'Contributed to the development of U by Prodia’s smart wearable feature by connecting real-time health data from users’ devices into the app, enabling more accurate insights and personalized recommendations.',
-          'Improved the sub-account and home-service experience, simplifying access for parents, guardians, and family members while ensuring smoother booking, tracking, and management flows.',
-          'Supported the integration between U by Prodia and Blu by BCA, helping build a seamless in-app payment experience that reduced friction during transactions and strengthened Prodia’s digital ecosystem.'
+          'Enhanced the U by Prodia digital health suite, including the Guardian feature layout and smart wearable integrations for real-time tracking.',
+          'Streamlined cross-team alignment by implementing modular UI flows and integrating Blu by BCA payments to deliver a friction-free experience.'
         ],
       },
     ],
@@ -119,17 +108,10 @@ export const experienceData: ExperienceItem[] = [
         type: 'Full-time',
         duration: '08.2023 - 04.2024',
         length: '9m',
-        tags: ['Branding', 'Framer', 'Koikoll Dashboard', 'ASR Testing', 'PRD', 'IVR Scenario'],
+        tags: ['Product Strategy', 'Framer', 'Product Design', 'B2B', 'Dashboard Design', 'Branding'],
         details: [
-          'Spearheaded the creation of indotek.ai’s logo and branding, and developed the company’s landing page using Framer.',
-          'Conducted in-depth research on Collection Agents’ user behavior with SIP Trunks and Daily Collections at BPO, leveraging insights to optimize service delivery.',
-          'Designed the Koikoll dashboard, conducted competitor analysis, and enhanced user experience by applying the “keep it simple stupid” principle, resulting in a user-friendly interface.',
-          'Authored 17 Product Requirement Documents (PRDs) within 4 months, with 14 functions successfully implemented by the IT team, ensuring thorough documentation and execution.',
-          'Supported the IT team in testing Automatic Speech Recognition (ASR) by validating IVR responses, ensuring the accuracy and reliability of the system.',
-          'Conducted training sessions on the use of Koikoll at client locations, equipping multiple clients with the skills to effectively utilize the dashboard.',
-          'Provided dedicated support to clients in using indotek.ai services, including SIP trunks/softphones and the Koikoll dashboard, enhancing their operational capabilities.',
-          'Assisted in the efficient delegation of tasks to sales engineers, streamlining task management and boosting team productivity.',
-          'Collaborated with the Data Labeling team to organize the knowledge base for AI training and IVR scenario generation, optimizing the development process for AI and IVR systems.'
+          'Spearheaded branding strategy, corporate identity, and responsive landing pages utilizing Framer for indotek.ai.',
+          'Designed and optimized the Koikoll telecom dashboard, utilizing competitor behavior studies to author 17 core cross-functional PRDs.'
         ],
       },
     ],
@@ -146,17 +128,10 @@ export const experienceData: ExperienceItem[] = [
         type: 'Full-time',
         duration: '07.2021 - 08.2023',
         length: '2y 2m',
-        tags: ['Shopify', 'Conversion Rate', 'dUCk Cafe', 'LILIT', 'Design System', 'Branding'],
+        tags: ['E-commerce', 'Shopify', 'Design Systems', 'Conversion Optimization', 'Web Design', 'User Interface (UI) Design'],
         details: [
-          'Conducted comprehensive competitor research to inform and enhance design projects, ensuring market competitiveness.',
-          'Contributed to the transition to Shopify, designing and optimizing Shopify websites to improve the online shopping experience. Successfully improve the conversion rate around 13-15% compared with the previous platform.',
-          'Developed fashionvalet website transitions, improving user for dUCk and LILIT. up to 400k new users.',
-          'Developed a user review feature for dUCk and LILIT. platforms, boosting customer engagement and feedback collection.',
-          'Redesigned the LILIT Web homepage, increasing user engagement and improving the site’s aesthetic appeal.',
-          'Created the dUCk UK landing page and optimized its checkout flow, facilitating entry into a new market.',
-          'Developed mobile and web applications for dUCk Cafe and dUCk Salon, streamlining reservation processes and enhancing customer experience.',
-          'Designed the branding for dUCk Salon, establishing a unique and recognizable brand identity.',
-          'Initiated a Multi-brand Design System for dUCk and LILIT., simplifying design and development processes for designers and developers.'
+          'Led website transition to Shopify for dUCk and LILIT brands, increasing active web conversion rates by 13-15% and welcoming up to 400k new users.',
+          'Initiated and governed a scalable Multi-brand Design System, accelerating design-to-development loops across mobile and web reservation flows.'
         ],
       },
     ],
@@ -173,13 +148,10 @@ export const experienceData: ExperienceItem[] = [
         type: 'Full-time',
         duration: '01.2021 - 04.2021',
         length: '4m',
-        tags: ['Wireframes', 'Homepage Redesign', 'Gamification', 'Usability Testing'],
+        tags: ['User Experience (UX)', 'Wireframing', 'Usability Testing', 'Gamification', 'Interaction Design'],
         details: [
-          'Designed wireframes, user flows, and interactions to enhance usability and engagement across the app.',
-          'Redesigned the homepage section, improving user comprehension and navigation for a more intuitive experience.',
-          'Streamlined the payment system, reducing friction and increasing transaction success rates.',
-          'Developed a gamification scheme to boost user retention and engagement.',
-          'Led a team to conduct the app’s first usability testing, identifying key pain points and driving data-driven design improvements'
+          'Redesigned homepage interfaces and gamification mechanisms to improve onboarding comprehension and visual hierarchy.',
+          'Spearheaded the platform\'s first formal usability testing sessions to eliminate onboarding blocks and streamline digital transaction rates.'
         ],
       },
     ],
@@ -195,15 +167,10 @@ export const experienceData: ExperienceItem[] = [
         type: 'Full-time',
         duration: '06.2019 - 12.2019',
         length: '7m',
-        tags: ['Value Proposition', 'User Research', 'Android/iOS UI', 'Prototyping'],
+        tags: ['Mobile Design', 'User Research', 'Prototyping', 'iOS Design', 'Value Proposition', 'Mentoring'],
         details: [
-          'Designed and implemented Value Proposition Design for Hipe application and Hipe Design Team, aligning product goals with user needs.',
-          'Conducted customer research and remote studies with the Business Development team to identify user pain points and improve Hipe’s offerings.',
-          'Created user interfaces for Hipe’s Android and iOS platforms, ensuring consistent and intuitive experiences across devices.',
-          'Developed prototypes for Hipe UMKM and Hipe Care, laying the groundwork for the app’s pivot to Hipe Chat.',
-          'Redesigned Kreki-119 app, simplifying navigation by reorganizing menu items and streamlining volunteer registration steps.',
-          'Delivered rapid prototypes for MyAbsent, Smart Laundry, and Hive-Tenant Management within 2 days per project, accelerating development timelines.',
-          'Mentored internship students, with 100% successfully transitioning to part-time roles.'
+          'Designed Hipe\'s native iOS/Android interfaces and pioneered alignment around value propositions based on structured remote customer studies.',
+          'Delivered rapid cross-platform prototypes (MyAbsent, Smart Laundry, Kreki-119) and mentored student interns to full execution.'
         ],
       },
     ],
@@ -220,15 +187,10 @@ export const experienceData: ExperienceItem[] = [
         type: 'Full-time',
         duration: '05.2018 - 05.2019',
         length: '1y',
-        tags: ['Sketch', 'Design System', 'Usability Testing', 'Interaction Design', 'Principle'],
+        tags: ['Sketch', 'Interaction Design', 'Usability Testing', 'Mobile Application Design', 'Design Systems', 'Principle'],
         details: [
-          'Created user interface designs and icons for Android, iOS, and web applications using Sketch',
-          'Refined and developed user interface requests to meet project specifications and enhance user satisfaction',
-          'Contributed to the development of the Proofn Design System, ensuring consistency and efficiency in design processes',
-          'Led the first usability testing sessions, achieving an 81-percent success rate across 7 tasks with 6 participants',
-          'Mentored internship students in usability testing, providing guidance and support to help them develop their skills',
-          'Prototyped new designs and created interaction designs using Principle and Haiku.ai, enhancing the overall user experience',
-          'Developed an interest in copywriting and content creation, contributing to the written aspects of design projects'
+          'Designed polished iOS, Android, and web interfaces using Sketch, contributing directly to the Proofn corporate Design System.',
+          'Iterated interactive animations via Principle and directed initial usability testing groups with an 81% task success rate.'
         ],
       },
     ],

@@ -51,7 +51,7 @@ export default function Experience() {
                 initial={{ opacity: 0, y: 5 }}
                 animate={{ opacity: 1, y: 0 }}
                 onClick={() => setSelectedTag(null)}
-                className="mt-3.5 px-2.5 py-1 bg-zinc-50 dark:bg-zinc-900 border border-zinc-200 dark:border-zinc-800 text-zinc-650 dark:text-zinc-350 font-mono text-[10px] uppercase font-semibold tracking-wider rounded flex items-center gap-1.5 cursor-pointer hover:bg-zinc-100 transition-colors"
+                className="mt-3.5 px-2.5 py-1 bg-zinc-50 dark:bg-zinc-900 border border-zinc-200 dark:border-zinc-800 text-zinc-650 dark:text-zinc-350 font-mono text-[10px] uppercase font-semibold tracking-wider rounded-none flex items-center gap-1.5 cursor-pointer hover:bg-zinc-100 transition-colors"
               >
                 <span>Filtered: {selectedTag}</span>
                 <span className="font-bold">×</span>
@@ -83,7 +83,7 @@ export default function Experience() {
                   <div className="flex items-center gap-3">
                     {/* Square icon emblem */}
                     {exp.logoImage || exp.logoEmoji ? (
-                      <div className="w-8 h-8 rounded bg-zinc-50 border border-zinc-200 dark:bg-zinc-900 dark:border-zinc-800 flex items-center justify-center font-display text-base overflow-hidden shrink-0">
+                      <div className="w-8 h-8 rounded-none bg-zinc-50 border border-zinc-200 dark:bg-zinc-900 dark:border-zinc-800 flex items-center justify-center font-display text-base overflow-hidden shrink-0">
                         {exp.logoImage ? (
                           <img
                             src={exp.logoImage}
@@ -103,7 +103,7 @@ export default function Experience() {
                       </span>
                       {/* Active green/blue glowing dot matching Image 2 */}
                       {exp.active && (
-                        <span className="inline-flex items-center gap-1 font-mono text-[9px] text-zinc-500 font-semibold bg-zinc-50 dark:bg-zinc-900 px-1.5 py-0.5 rounded border border-zinc-250 dark:border-zinc-800">
+                        <span className="inline-flex items-center gap-1 font-mono text-[9px] text-zinc-500 font-semibold bg-zinc-50 dark:bg-zinc-900 px-1.5 py-0.5 rounded-none border border-zinc-250 dark:border-zinc-800">
                           <span className="w-1.5 h-1.5 rounded-full bg-emerald-500 animate-pulse" />
                           <span>Active</span>
                         </span>
@@ -134,7 +134,7 @@ export default function Experience() {
                               <span>//</span>
                               <span>{role.duration}</span>
                               <span>//</span>
-                              <span className="font-medium text-zinc-550 dark:text-zinc-400 bg-zinc-100/60 dark:bg-zinc-900 px-1 py-0.5 rounded border border-zinc-200/20 dark:border-zinc-800/20">{role.length}</span>
+                              <span className="font-medium text-zinc-550 dark:text-zinc-400 bg-zinc-100/60 dark:bg-zinc-900 px-1 py-0.5 rounded-none border border-zinc-200/20 dark:border-zinc-800/20">{role.length}</span>
                             </div>
                           </div>
 
@@ -157,7 +157,7 @@ export default function Experience() {
                                 <button
                                   key={tag}
                                   onClick={(e) => handleTagClick(tag, e)}
-                                  className={`px-2 py-0.5 font-mono text-[9px] sm:text-[10px] rounded transition-all duration-150 cursor-pointer ${
+                                  className={`px-2 py-0.5 font-mono text-[9px] sm:text-[10px] rounded-none transition-all duration-150 cursor-pointer ${
                                     isCurrentFilter
                                       ? 'bg-zinc-900 text-white dark:bg-zinc-100 dark:text-zinc-950 border-zinc-900 dark:border-zinc-100'
                                       : isHighlighted
