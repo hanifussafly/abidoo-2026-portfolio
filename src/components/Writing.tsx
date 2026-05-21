@@ -78,7 +78,7 @@ export default function Writing({ onSelectArticle }: WritingProps) {
                 >
                   <div className="flex items-center gap-4.5 min-w-0">
                     <div className="flex flex-col min-w-0 pr-2">
-                       <h3 className="font-sans font-semibold text-sm sm:text-base text-zinc-900 dark:text-zinc-100 group-hover:text-blue-500 transition-colors truncate">
+                       <h3 className="font-sans font-semibold text-sm sm:text-base text-zinc-900 dark:text-zinc-100 group-hover:text-orange-500 transition-colors truncate">
                         {article.title}
                       </h3>
                       

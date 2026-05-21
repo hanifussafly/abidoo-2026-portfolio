@@ -826,7 +826,7 @@ export default function CaseStudyMola({ onBack, onNavigateCase }: CaseStudyMolaP
                   <ArrowLeft className="w-3 h-3 group-hover:-translate-x-0.5 transition-transform" />
                   <span>Previous Chapter</span>
                 </div>
-                <h4 className="font-sans font-bold text-sm text-zinc-800 dark:text-zinc-200 group-hover:text-blue-500 transition-colors line-clamp-2">
+                <h4 className="font-sans font-bold text-sm text-zinc-800 dark:text-zinc-200 group-hover:text-orange-500 transition-colors line-clamp-2">
                   Enhancing shopping experience for dUCk - Research for PDP image ratio
                 </h4>
               </button>
@@ -839,7 +839,7 @@ export default function CaseStudyMola({ onBack, onNavigateCase }: CaseStudyMolaP
                   <span>Next Chapter</span>
                   <ArrowRight className="w-3 h-3 group-hover:translate-x-0.5 transition-transform" />
                 </div>
-                <h4 className="font-sans font-bold text-sm text-zinc-800 dark:text-zinc-200 group-hover:text-blue-500 transition-colors text-right line-clamp-2">
+                <h4 className="font-sans font-bold text-sm text-zinc-800 dark:text-zinc-200 group-hover:text-orange-500 transition-colors text-right line-clamp-2">
                   Niagahoster Landing Page Redesign with UCD
                 </h4>
               </button>

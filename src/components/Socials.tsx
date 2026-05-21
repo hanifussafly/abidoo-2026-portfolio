@@ -48,13 +48,13 @@ export default function Socials() {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true, margin: "-50px" }}
                 transition={{ delay: index * 0.05, duration: 0.4 }}
-                className={`group flex items-center justify-between p-5 bg-white dark:bg-zinc-950 hover:bg-zinc-50 dark:hover:bg-zinc-900/40 transition-all select-none focus-visible:outline-blue-500 hover:z-10 relative ${xsRightBorder} ${xsBottomBorder} ${smRightBorder} ${smBottomBorder}`}
+                className={`group flex items-center justify-between p-5 bg-white dark:bg-zinc-950 hover:bg-zinc-50 dark:hover:bg-zinc-900/40 transition-all select-none focus-visible:outline-orange-500 hover:z-10 relative ${xsRightBorder} ${xsBottomBorder} ${smRightBorder} ${smBottomBorder}`}
                 aria-label={`Visit Abid Hanifussafly's profile on ${social.name}`}
               >
                 {/* Left Logo + Name Indicator */}
                 <div className="flex items-center gap-3 min-w-0">
                   <span className="p-2 bg-zinc-50 dark:bg-zinc-900 border border-zinc-200/60 dark:border-zinc-800/60 rounded flex items-center justify-center shrink-0">
-                    <IconComponent className="w-4 h-4 text-zinc-800 dark:text-zinc-200 group-hover:text-blue-500 transition-colors" />
+                    <IconComponent className="w-4 h-4 text-zinc-800 dark:text-zinc-200 group-hover:text-orange-500 transition-colors" />
                   </span>
                   
                   <div className="flex flex-col min-w-0 leading-tight">
@@ -84,7 +84,7 @@ export default function Socials() {
                 </div>
 
                 {/* Interactive subtle scale on hover click */}
-                <div className="absolute inset-0 border border-transparent group-hover:border-blue-500/10 pointer-events-none rounded transition-colors" />
+                <div className="absolute inset-0 border border-transparent group-hover:border-orange-500/10 pointer-events-none rounded transition-colors" />
               </motion.a>
             );
           })}

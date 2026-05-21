@@ -109,9 +109,9 @@ export default function CommandPalette({ isOpen, onClose }: CommandPaletteProps)
       if (el) {
         el.scrollIntoView({ behavior: 'smooth', block: 'start' });
         // Trigger high contrast flash for search landing
-        el.classList.add('transition-all', 'ring-4', 'ring-blue-500/40');
+        el.classList.add('transition-all', 'ring-4', 'ring-orange-500/40');
         setTimeout(() => {
-          el.classList.remove('ring-4', 'ring-blue-500/40');
+          el.classList.remove('ring-4', 'ring-orange-500/40');
         }, 1500);
       }
     }
@@ -193,7 +193,7 @@ export default function CommandPalette({ isOpen, onClose }: CommandPaletteProps)
                         <div className="flex items-center gap-2.5 min-w-0">
                           <span className={`p-1 rounded ${
                             isSelected 
-                              ? 'text-blue-500 bg-white/50 dark:bg-zinc-900/50' 
+                              ? 'text-orange-500 bg-white/50 dark:bg-zinc-900/50' 
                               : 'text-zinc-400 group-hover:text-zinc-500'
                           }`}>
                             {item.icon}

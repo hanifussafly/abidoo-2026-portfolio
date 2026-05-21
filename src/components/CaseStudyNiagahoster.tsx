@@ -87,7 +87,7 @@ export default function CaseStudyNiagahoster({ onBack, onNavigateCase }: CaseStu
         <div className="p-6 md:p-8 border-b sm:border-b-0 sm:border-r border-zinc-200 dark:border-zinc-800 flex flex-col gap-1.5">
           <span className="font-mono text-[10px] text-zinc-400 dark:text-zinc-500 uppercase tracking-widest font-bold">Timeline</span>
           <span className="font-sans font-semibold text-sm text-zinc-800 dark:text-zinc-200 flex items-center gap-2">
-            <Clock className="w-4 h-4 text-zinc-400" /> Redesign concept and framework
+            <Clock className="w-4 h-4 text-zinc-400" /> 5-9 May 2020
           </span>
         </div>
         <div className="p-6 md:p-8 flex flex-col gap-1.5">
@@ -403,7 +403,7 @@ export default function CaseStudyNiagahoster({ onBack, onNavigateCase }: CaseStu
                   <ArrowLeft className="w-3 h-3 group-hover:-translate-x-0.5 transition-transform" />
                   <span>Previous Chapter</span>
                 </div>
-                <h4 className="font-sans font-bold text-sm text-zinc-800 dark:text-zinc-200 group-hover:text-blue-500 transition-colors line-clamp-2">
+                <h4 className="font-sans font-bold text-sm text-zinc-800 dark:text-zinc-200 group-hover:text-orange-500 transition-colors line-clamp-2">
                   Mola TV - Registration Flow with UGC
                 </h4>
               </button>
@@ -416,7 +416,7 @@ export default function CaseStudyNiagahoster({ onBack, onNavigateCase }: CaseStu
                   <span>Next Chapter</span>
                   <ArrowRight className="w-3 h-3 group-hover:translate-x-0.5 transition-transform" />
                 </div>
-                <h4 className="font-sans font-bold text-sm text-zinc-800 dark:text-zinc-200 group-hover:text-blue-500 transition-colors text-right line-clamp-2">
+                <h4 className="font-sans font-bold text-sm text-zinc-800 dark:text-zinc-200 group-hover:text-orange-500 transition-colors text-right line-clamp-2">
                   Welcoming Users the Right Way: Crafting an Effective Onboarding for EZCoordinator
                 </h4>
               </button>

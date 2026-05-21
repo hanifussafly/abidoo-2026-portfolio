@@ -146,7 +146,7 @@ export default function Hero() {
                 {/* Speaker Announce action button */}
                 <button
                   onClick={speakName}
-                  className="p-1 px-1.5 bg-zinc-100 hover:bg-zinc-200 dark:bg-zinc-900 dark:hover:bg-zinc-850 text-zinc-500 dark:text-zinc-400 rounded hover:text-blue-500 transition-all flex items-center"
+                  className="p-1 px-1.5 bg-zinc-100 hover:bg-zinc-200 dark:bg-zinc-900 dark:hover:bg-zinc-850 text-zinc-500 dark:text-zinc-400 rounded hover:text-orange-500 transition-all flex items-center"
                   title="Pronounce Name"
                   aria-label="Hear pronunciation of Abid Hanifussafly"
                 >
@@ -157,9 +157,9 @@ export default function Hero() {
           </div>
  
           <div className="px-6 pt-2 pb-5 md:px-8 md:pt-2 md:pb-6">
-            <h2 className="font-sans font-medium text-base md:text-lg text-zinc-500 dark:text-zinc-400">
-              An AI-Native Product Designer specializing in building user-friendly apps.
-            </h2>
+            <p className="font-sans font-medium text-sm text-zinc-500 dark:text-zinc-400 leading-relaxed">
+              Over 7 years, I've shaped digital products used by thousands, from e-commerce platforms to healthcare apps. I integrate AI into my design workflow and product strategy, helping teams move faster without sacrificing depth. My work sits at the intersection of UX strategy, design systems, and product thinking.
+            </p>
           </div>
         </div>
       </div>
@@ -197,7 +197,7 @@ export default function Hero() {
                 href={`https://${contactInfo.website}`}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-zinc-950 dark:text-zinc-50 font-bold hover:text-blue-500 hover:underline flex items-center gap-1.5 group"
+                className="text-zinc-950 dark:text-zinc-50 font-bold hover:text-orange-500 hover:underline flex items-center gap-1.5 group"
               >
                 {contactInfo.website}
               </a>
@@ -221,28 +221,28 @@ export default function Hero() {
             {/* Email Address */}
             <button 
               onClick={() => copyToClipboard(contactInfo.email, 'Email address')}
-              className="w-full flex justify-between items-center border-b border-zinc-200 dark:border-zinc-800 px-5 py-3 hover:bg-blue-50/5 hover:text-blue-500 group text-left cursor-copy transition-colors"
+              className="w-full flex justify-between items-center border-b border-zinc-200 dark:border-zinc-800 px-5 py-3 hover:bg-orange-50/5 hover:text-orange-500 group text-left cursor-copy transition-colors"
               title="Click to copy email"
               aria-label={`Copy email: ${contactInfo.email}`}
             >
-              <span className="text-zinc-400 group-hover:text-blue-400">Email</span>
-              <span className="text-zinc-900 dark:text-zinc-100 group-hover:text-blue-500 font-mono text-xs flex items-center gap-1.5 font-medium">
+              <span className="text-zinc-400 group-hover:text-orange-400">Email</span>
+              <span className="text-zinc-900 dark:text-zinc-100 group-hover:text-orange-500 font-mono text-xs flex items-center gap-1.5 font-medium">
                 {contactInfo.email}
-                <Copy className="w-3.5 h-3.5 text-zinc-400 dark:text-zinc-500 group-hover:text-blue-500 transition-colors shrink-0" />
+                <Copy className="w-3.5 h-3.5 text-zinc-400 dark:text-zinc-505 group-hover:text-orange-500 transition-colors shrink-0" />
               </span>
             </button>
 
             {/* Phone */}
             <button 
               onClick={() => copyToClipboard(contactInfo.phone, 'Phone number')}
-              className="w-full flex justify-between items-center px-5 py-3 hover:bg-blue-50/5 hover:text-blue-500 group text-left cursor-copy transition-colors h-full min-h-[44px]"
+              className="w-full flex justify-between items-center px-5 py-3 hover:bg-orange-50/5 hover:text-orange-500 group text-left cursor-copy transition-colors h-full min-h-[44px]"
               title="Click to copy phone to clipboard"
               aria-label={`Copy phone: ${contactInfo.phone}`}
             >
-              <span className="text-zinc-400 group-hover:text-blue-400">Phone</span>
-              <span className="text-zinc-900 dark:text-zinc-100 group-hover:text-blue-500 font-mono text-xs flex items-center gap-1.5 transition-all font-medium">
+              <span className="text-zinc-400 group-hover:text-orange-400">Phone</span>
+              <span className="text-zinc-900 dark:text-zinc-100 group-hover:text-orange-500 font-mono text-xs flex items-center gap-1.5 transition-all font-medium">
                 {contactInfo.phone}
-                <Copy className="w-3.5 h-3.5 text-zinc-400 dark:text-zinc-500 group-hover:text-blue-500 transition-colors shrink-0" />
+                <Copy className="w-3.5 h-3.5 text-zinc-400 dark:text-zinc-505 group-hover:text-orange-500 transition-colors shrink-0" />
               </span>
             </button>
 

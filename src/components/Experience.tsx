@@ -98,7 +98,7 @@ export default function Experience() {
                     ) : null}
 
                     <div className="flex items-center gap-2">
-                      <span className="font-display font-bold text-lg sm:text-xl text-zinc-950 dark:text-zinc-50 group-hover:text-blue-500 transition-colors">
+                      <span className="font-display font-bold text-lg sm:text-xl text-zinc-950 dark:text-zinc-50 group-hover:text-orange-500 transition-colors">
                         {exp.company}
                       </span>
                       {/* Active green/blue glowing dot matching Image 2 */}

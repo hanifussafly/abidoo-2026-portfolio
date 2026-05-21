@@ -135,10 +135,19 @@ export default function CaseStudyEZC({ onBack, onNavigateCase }: CaseStudyEZCPro
             </h1>
           </div>
 
-          <VideoPreview 
-            label="EZCoordinator Video-Based Onboarding Flow" 
-            secondaryLabel="Watch how users learn core real estate operations via bite-sized guided visual walk-throughs." 
-          />
+          <div className="my-8 w-full border border-zinc-200 dark:border-zinc-800 rounded-none overflow-hidden bg-zinc-950 relative">
+            <div style={{ padding: '69.88% 0 0 0', position: 'relative' }}>
+              <iframe 
+                src="https://player.vimeo.com/video/1056291623?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479&amp;autoplay=1&amp;muted=1&amp;loop=1" 
+                frameBorder="0" 
+                allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share" 
+                referrerPolicy="strict-origin-when-cross-origin" 
+                style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '100%' }} 
+                title="EZC - Checklist &amp; Progress - Preview"
+              ></iframe>
+            </div>
+            <script src="https://player.vimeo.com/api/player.js" async></script>
+          </div>
         </div>
       </div>
 
@@ -380,6 +389,20 @@ export default function CaseStudyEZC({ onBack, onNavigateCase }: CaseStudyEZCPro
                 mobileSrc="https://framerusercontent.com/images/dNVGs8E0FOCTykuVC6wwJ562A.png?width=1146&height=1326"
                 caption="Image - Bunch of Tooltips copy for onboarding"
               />
+
+              <div className="my-8 w-full border border-zinc-200 dark:border-zinc-800 rounded-none overflow-hidden bg-zinc-950 relative">
+                <div style={{ padding: '69.88% 0 0 0', position: 'relative' }}>
+                  <iframe 
+                    src="https://player.vimeo.com/video/1056279456?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479&amp;autoplay=1&amp;muted=1&amp;loop=1" 
+                    frameBorder="0" 
+                    allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share" 
+                    referrerPolicy="strict-origin-when-cross-origin" 
+                    style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '100%' }} 
+                    title="EZC - Tooltips"
+                  ></iframe>
+                </div>
+                <script src="https://player.vimeo.com/api/player.js" async></script>
+              </div>
             </div>
 
             {/* Checklist and Progress Bar section */}
@@ -410,6 +433,20 @@ export default function CaseStudyEZC({ onBack, onNavigateCase }: CaseStudyEZCPro
                   The default options would be with tooltips. It is not using too much screens because it showing a small tooltips to let users know about each features.
                 </p>
               </div>
+
+              <div className="my-8 w-full border border-zinc-200 dark:border-zinc-800 rounded-none overflow-hidden bg-zinc-950 relative">
+                <div style={{ padding: '69.88% 0 0 0', position: 'relative' }}>
+                  <iframe 
+                    src="https://player.vimeo.com/video/1056279501?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479&amp;autoplay=1&amp;muted=1&amp;loop=1" 
+                    frameBorder="0" 
+                    allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share" 
+                    referrerPolicy="strict-origin-when-cross-origin" 
+                    style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '100%' }} 
+                    title="EZC - Checklist &amp; Progress 1"
+                  ></iframe>
+                </div>
+                <script src="https://player.vimeo.com/api/player.js" async></script>
+              </div>
             </div>
 
             {/* "Can you make it more simple?" section */}
@@ -425,10 +462,19 @@ export default function CaseStudyEZC({ onBack, onNavigateCase }: CaseStudyEZCPro
               </div>
 
               {/* Video Walkthrough Rectangle */}
-              <VideoPreview 
-                label="EZCoordinator Video-Based Onboarding Flow" 
-                secondaryLabel="Watch how users learn core real estate operations via bite-sized guided visual walk-throughs." 
-              />
+              <div className="my-8 w-full border border-zinc-200 dark:border-zinc-800 rounded-none overflow-hidden bg-zinc-950 relative">
+                <div style={{ padding: '69.88% 0 0 0', position: 'relative' }}>
+                  <iframe 
+                    src="https://player.vimeo.com/video/1056279621?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479&amp;autoplay=1&amp;muted=1&amp;loop=1" 
+                    frameBorder="0" 
+                    allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share" 
+                    referrerPolicy="strict-origin-when-cross-origin" 
+                    style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '100%' }} 
+                    title="EZC - Checklist &amp; Progress 2"
+                  ></iframe>
+                </div>
+                <script src="https://player.vimeo.com/api/player.js" async></script>
+              </div>
             </div>
           </section>
 
@@ -486,7 +532,7 @@ export default function CaseStudyEZC({ onBack, onNavigateCase }: CaseStudyEZCPro
                   <ArrowLeft className="w-3 h-3 group-hover:-translate-x-0.5 transition-transform" />
                   <span>Previous Chapter</span>
                 </div>
-                <h4 className="font-sans font-bold text-sm text-zinc-800 dark:text-zinc-200 group-hover:text-blue-500 transition-colors line-clamp-2">
+                <h4 className="font-sans font-bold text-sm text-zinc-800 dark:text-zinc-200 group-hover:text-orange-500 transition-colors line-clamp-2">
                   Niagahoster Landing Page Redesign with UCD (User-Centered Design)
                 </h4>
               </button>
@@ -499,7 +545,7 @@ export default function CaseStudyEZC({ onBack, onNavigateCase }: CaseStudyEZCPro
                   <span>Next Chapter</span>
                   <ArrowRight className="w-3 h-3 group-hover:translate-x-0.5 transition-transform" />
                 </div>
-                <h4 className="font-sans font-bold text-sm text-zinc-800 dark:text-zinc-200 group-hover:text-blue-500 transition-colors text-right line-clamp-2">
+                <h4 className="font-sans font-bold text-sm text-zinc-800 dark:text-zinc-200 group-hover:text-orange-500 transition-colors text-right line-clamp-2">
                   From Fashionvalet to dUCk & LILIT. : Crafting Prototypes for a Seamless Transition
                 </h4>
               </button>

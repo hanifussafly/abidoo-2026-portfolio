@@ -298,10 +298,19 @@ export default function CaseStudyFV({ onBack, onNavigateCase }: CaseStudyFVProps
               </div>
 
               {/* Video - First iteration prototype Walkthrough */}
-              <PrototypePreview 
-                label="Video - First iteration prototype" 
-                secondaryLabel="Demonstrating layout options, user transition logic and Shopify catalog highlights."
-              />
+              <div className="my-8 w-full border border-zinc-200 dark:border-zinc-800 rounded-none overflow-hidden bg-zinc-950 relative">
+                <div style={{ padding: '69.88% 0 0 0', position: 'relative' }}>
+                  <iframe 
+                    src="https://player.vimeo.com/video/1053646122?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479&amp;autoplay=1&amp;muted=1&amp;loop=1" 
+                    frameBorder="0" 
+                    allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share" 
+                    referrerPolicy="strict-origin-when-cross-origin" 
+                    style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '100%' }} 
+                    title="FV Sunset - 1st Iterations"
+                  ></iframe>
+                </div>
+                <script src="https://player.vimeo.com/api/player.js" async></script>
+              </div>
 
               {/* Second Version Sub-section */}
               <div className="pt-4 border-t border-zinc-100 dark:border-zinc-800 flex flex-col gap-3">
@@ -328,10 +337,19 @@ export default function CaseStudyFV({ onBack, onNavigateCase }: CaseStudyFVProps
               </div>
 
               {/* Image - Second iteration Prototype Walkthrough */}
-              <PrototypePreview 
-                label="Image - Second iteration Prototype" 
-                secondaryLabel="Experience the elegant sunset transition theme, dynamic layout styling and account migration check."
-              />
+              <div className="my-8 w-full border border-zinc-200 dark:border-zinc-800 rounded-none overflow-hidden bg-zinc-950 relative">
+                <div style={{ padding: '69.88% 0 0 0', position: 'relative' }}>
+                  <iframe 
+                    src="https://player.vimeo.com/video/1053646951?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479&amp;autoplay=1&amp;muted=1&amp;loop=1" 
+                    frameBorder="0" 
+                    allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share" 
+                    referrerPolicy="strict-origin-when-cross-origin" 
+                    style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '100%' }} 
+                    title="FV Sunset - Final"
+                  ></iframe>
+                </div>
+                <script src="https://player.vimeo.com/api/player.js" async></script>
+              </div>
 
             </div>
           </section>
@@ -391,7 +409,7 @@ export default function CaseStudyFV({ onBack, onNavigateCase }: CaseStudyFVProps
                   <ArrowLeft className="w-3 h-3 group-hover:-translate-x-0.5 transition-transform" />
                   <span>Previous Chapter</span>
                 </div>
-                <h4 className="font-sans font-bold text-sm text-zinc-800 dark:text-zinc-200 group-hover:text-blue-500 transition-colors line-clamp-2">
+                <h4 className="font-sans font-bold text-sm text-zinc-800 dark:text-zinc-200 group-hover:text-orange-500 transition-colors line-clamp-2">
                   Welcoming Users the Right Way: Crafting an Effective Onboarding for EZCoordinator
                 </h4>
               </button>
@@ -404,7 +422,7 @@ export default function CaseStudyFV({ onBack, onNavigateCase }: CaseStudyFVProps
                   <span>Next Chapter</span>
                   <ArrowRight className="w-3 h-3 group-hover:translate-x-0.5 transition-transform" />
                 </div>
-                <h4 className="font-sans font-bold text-sm text-zinc-800 dark:text-zinc-200 group-hover:text-blue-500 transition-colors text-right line-clamp-2">
+                <h4 className="font-sans font-bold text-sm text-zinc-800 dark:text-zinc-200 group-hover:text-orange-500 transition-colors text-right line-clamp-2">
                   Enhancing shopping experience for dUCk - Research for PDP image ratio
                 </h4>
               </button>
