@@ -49,7 +49,7 @@ export default function CaseStudyNiagahoster({ onBack, onNavigateCase }: CaseStu
     <article className="w-full bg-white dark:bg-zinc-950 min-h-screen">
       
       {/* Back Button Navigation Bar */}
-      <div className="border-b border-zinc-200 dark:border-zinc-800 px-6 py-4 md:px-8 bg-zinc-50/20 dark:bg-zinc-900/10 flex items-center justify-between">
+      <div className="border-b border-zinc-200 dark:border-zinc-800 px-4 sm:px-6 md:px-8 py-4 bg-zinc-50/20 dark:bg-zinc-900/10 flex items-center justify-between">
         <button
           onClick={onBack}
           className="group flex items-center gap-2 text-xs font-mono font-bold uppercase tracking-wider text-zinc-500 hover:text-zinc-900 dark:hover:text-zinc-200 transition-colors focus-visible:outline-blue-500 cursor-pointer"
@@ -63,7 +63,7 @@ export default function CaseStudyNiagahoster({ onBack, onNavigateCase }: CaseStu
       </div>
 
       {/* Hero Header Block */}
-      <div className="border-b border-zinc-200 dark:border-zinc-800 px-6 py-10 md:px-8 md:py-12">
+      <div className="border-b border-zinc-200 dark:border-zinc-800 px-4 sm:px-6 md:px-8 py-10 md:py-12">
         <div className="max-w-4xl mx-auto flex flex-col gap-8">
           <div>
             <span className="font-mono text-xs text-blue-500 dark:text-blue-400 font-bold uppercase tracking-widest block mb-3">
@@ -78,19 +78,19 @@ export default function CaseStudyNiagahoster({ onBack, onNavigateCase }: CaseStu
 
       {/* Metadata Overview Row */}
       <div className="grid grid-cols-1 sm:grid-cols-3 border-b border-zinc-200 dark:border-zinc-800 bg-zinc-50/30 dark:bg-zinc-900/5 select-text">
-        <div className="p-6 md:p-8 border-b sm:border-b-0 sm:border-r border-zinc-200 dark:border-zinc-800 flex flex-col gap-1.5">
+        <div className="p-4 sm:p-6 md:p-8 border-b sm:border-b-0 sm:border-r border-zinc-200 dark:border-zinc-800 flex flex-col gap-1.5">
           <span className="font-mono text-[10px] text-zinc-400 dark:text-zinc-500 uppercase tracking-widest font-bold">Role</span>
           <span className="font-sans font-semibold text-sm text-zinc-800 dark:text-zinc-200 flex items-center gap-2">
             <User className="w-4 h-4 text-zinc-400" /> UI/UX Designer
           </span>
         </div>
-        <div className="p-6 md:p-8 border-b sm:border-b-0 sm:border-r border-zinc-200 dark:border-zinc-800 flex flex-col gap-1.5">
+        <div className="p-4 sm:p-6 md:p-8 border-b sm:border-b-0 sm:border-r border-zinc-200 dark:border-zinc-800 flex flex-col gap-1.5">
           <span className="font-mono text-[10px] text-zinc-400 dark:text-zinc-500 uppercase tracking-widest font-bold">Timeline</span>
           <span className="font-sans font-semibold text-sm text-zinc-800 dark:text-zinc-200 flex items-center gap-2">
             <Clock className="w-4 h-4 text-zinc-400" /> 5-9 May 2020
           </span>
         </div>
-        <div className="p-6 md:p-8 flex flex-col gap-1.5">
+        <div className="p-4 sm:p-6 md:p-8 flex flex-col gap-1.5">
           <span className="font-mono text-[10px] text-zinc-400 dark:text-zinc-500 uppercase tracking-widest font-bold">Product & Platform</span>
           <span className="font-sans font-semibold text-sm text-zinc-800 dark:text-zinc-200 flex items-center gap-2">
             <Globe className="w-4 h-4 text-zinc-400" /> Niagahoster Web & Mobile Responsive
@@ -102,7 +102,7 @@ export default function CaseStudyNiagahoster({ onBack, onNavigateCase }: CaseStu
       <div className="grid grid-cols-1 md:grid-cols-12 border-b border-zinc-200 dark:border-zinc-800">
         
         {/* Left column sidebar for local table of contents */}
-        <div className="md:col-span-3 p-6 md:p-8 bg-zinc-50/20 dark:bg-zinc-900/10 border-b md:border-b-0 md:border-r border-zinc-200 dark:border-zinc-805 hidden md:block">
+        <div className="md:col-span-3 p-4 sm:p-6 md:p-8 bg-zinc-50/20 dark:bg-zinc-900/10 border-b md:border-b-0 md:border-r border-zinc-200 dark:border-zinc-855 hidden md:block">
           <div className="sticky top-6 flex flex-col gap-6">
             <nav className="flex flex-col gap-4 font-sans text-xs font-bold tracking-wider text-zinc-400 uppercase select-none">
               <span className="text-[10px] text-zinc-300 dark:text-zinc-650 font-mono tracking-widest font-bold mb-1">Navigation</span>
@@ -118,7 +118,7 @@ export default function CaseStudyNiagahoster({ onBack, onNavigateCase }: CaseStu
         </div>
 
         {/* Right column detailed reading content */}
-        <div className="md:col-span-9 p-6 md:p-12 flex flex-col gap-14 select-text max-w-4xl">
+        <div className="md:col-span-9 p-4 sm:p-6 md:p-10 lg:p-12 flex flex-col gap-14 select-text max-w-4xl">
 
           {/* 1. Task */}
           <section id="task" className="flex flex-col gap-4 scroll-mt-20">

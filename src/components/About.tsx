@@ -12,7 +12,7 @@ export default function About() {
       <div className="grid grid-cols-1 md:grid-cols-12 border-b border-zinc-200 dark:border-zinc-800">
         
         {/* Left Column: Heading Zone */}
-        <div className="md:col-span-3 p-6 md:p-8 bg-zinc-50/20 dark:bg-zinc-900/10 border-b md:border-b-0 md:border-r border-zinc-200 dark:border-zinc-800">
+        <div className="md:col-span-3 p-4 sm:p-6 md:p-8 bg-zinc-50/20 dark:bg-zinc-900/10 border-b md:border-b-0 md:border-r border-zinc-200 dark:border-zinc-800">
           <motion.div
             initial={{ opacity: 0, x: -10 }}
             whileInView={{ opacity: 1, x: 0 }}
@@ -27,7 +27,7 @@ export default function About() {
         </div>
 
         {/* Right Column: Paragraph Content Bullet highlights */}
-        <div className="md:col-span-9 p-6 sm:p-8 md:p-10 flex flex-col justify-center gap-6 leading-relaxed text-zinc-650 dark:text-zinc-350 select-text bg-white dark:bg-zinc-950">
+        <div className="md:col-span-9 p-4 sm:p-6 md:p-8 lg:p-10 flex flex-col justify-center gap-6 leading-relaxed text-zinc-650 dark:text-zinc-350 select-text bg-white dark:bg-zinc-950">
           
           <motion.div
             initial={{ opacity: 0, y: 15 }}

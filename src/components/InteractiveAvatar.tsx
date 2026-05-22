@@ -12,7 +12,7 @@ export default function InteractiveAvatar() {
 
   return (
     <div 
-      className="relative w-full h-full min-h-[240px] md:min-h-full overflow-hidden bg-zinc-100 dark:bg-zinc-900 flex items-center justify-center select-none cursor-pointer group"
+      className="relative w-full aspect-square sm:aspect-[4/5] md:aspect-auto md:h-full md:min-h-full overflow-hidden bg-zinc-100 dark:bg-zinc-900 flex items-center justify-center select-none cursor-pointer group"
       onClick={() => setIsWaving(t => !t)}
       onMouseEnter={() => setIsWaving(true)}
       onMouseLeave={() => setIsWaving(false)}

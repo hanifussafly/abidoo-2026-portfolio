@@ -83,7 +83,7 @@ export default function Hero() {
       
       {/* 1. TOP HERO SECTION: Dot Grid background spanning with 1/3 and 2/3 separation */}
       <div className="grid grid-cols-1 md:grid-cols-12 border-b border-zinc-200 dark:border-zinc-800 w-full relative">
-        <div className="col-span-1 md:col-span-3 border-r-0 md:border-r border-b md:border-b-0 border-zinc-200 dark:border-zinc-800 dot-grid min-h-[40px] md:min-h-[160px] relative">
+        <div className="hidden md:block col-span-1 md:col-span-3 border-r-0 md:border-r border-b md:border-b-0 border-zinc-200 dark:border-zinc-800 dot-grid min-h-[40px] md:min-h-[160px] relative">
           <div className="absolute top-4 left-6 text-[10px] font-mono text-zinc-400 dark:text-zinc-650 tracking-widest uppercase hidden md:block select-none">
             SYSTEM_GRID: R_00
           </div>
@@ -114,7 +114,7 @@ export default function Hero() {
           <InteractiveAvatar />
         </div>        {/* Right Subcolumn: Large Profile Headers */}
         <div className="col-span-1 md:col-span-9 flex flex-col justify-start bg-white dark:bg-zinc-950 divide-y divide-zinc-200 dark:divide-zinc-800">
-          <div className="px-6 pt-4 pb-2 md:px-8 md:pt-4 md:pb-2">
+          <div className="px-4 sm:px-6 md:px-8 pt-4 pb-2">
             <div className="h-4.5 sm:h-5 overflow-hidden relative font-mono text-xs md:text-sm text-zinc-400 dark:text-zinc-500 tracking-wider">
               <AnimatePresence mode="popLayout">
                 <motion.span
@@ -131,7 +131,7 @@ export default function Hero() {
             </div>
           </div>
           
-          <div className="px-6 py-2 md:px-8 md:py-2 flex flex-col justify-center">
+          <div className="px-4 sm:px-6 md:px-8 py-2 flex flex-col justify-center">
             <div className="flex items-center flex-wrap gap-2">
               <h1 className="font-display font-semibold text-2xl sm:text-3xl md:text-4xl text-zinc-950 dark:text-zinc-50 tracking-tight">
                 Abid Hanifussafly
@@ -160,7 +160,7 @@ export default function Hero() {
             </div>
           </div>
  
-          <div className="px-6 pt-2 pb-5 md:px-8 md:pt-2 md:pb-6">
+          <div className="px-4 sm:px-6 md:px-8 pt-2 pb-5 md:pb-6">
             <p className="font-sans font-medium text-sm text-zinc-500 dark:text-zinc-400 leading-relaxed">
               Over 7 years, I've shaped digital products used by thousands, from e-commerce platforms to healthcare apps. I integrate AI into my design workflow and product strategy, helping teams move faster without sacrificing depth. My work sits at the intersection of UX strategy, design systems, and product thinking.
             </p>
@@ -179,7 +179,7 @@ export default function Hero() {
           <div className="border-r-0 sm:border-r border-b sm:border-b-0 border-zinc-200 dark:border-zinc-800 flex flex-col justify-start">
             
             {/* Design Role */}
-            <div className="flex justify-between items-center border-b border-zinc-200 dark:border-zinc-800 px-5 py-3 hover:bg-zinc-50/50 dark:hover:bg-zinc-900/15 transition-colors">
+            <div className="flex justify-between items-center border-b border-zinc-200 dark:border-zinc-800 px-4 sm:px-6 md:px-8 py-3 hover:bg-zinc-50/50 dark:hover:bg-zinc-900/15 transition-colors">
               <span className="text-zinc-400">Design Role</span>
               <span className="text-zinc-900 dark:text-zinc-100 font-bold">
                 AI-Native Designer
@@ -187,7 +187,7 @@ export default function Hero() {
             </div>
 
             {/* Location */}
-            <div className="flex justify-between items-center border-b border-zinc-200 dark:border-zinc-800 px-5 py-3 hover:bg-zinc-50/50 dark:hover:bg-zinc-900/15 transition-colors">
+            <div className="flex justify-between items-center border-b border-zinc-200 dark:border-zinc-800 px-4 sm:px-6 md:px-8 py-3 hover:bg-zinc-50/50 dark:hover:bg-zinc-900/15 transition-colors">
               <span className="text-zinc-400">Location</span>
               <span className="text-zinc-900 dark:text-zinc-100 text-right font-medium">
                 {contactInfo.location}
@@ -195,7 +195,7 @@ export default function Hero() {
             </div>
 
             {/* Website */}
-            <div className="flex justify-between items-center px-5 py-3 hover:bg-zinc-50/50 dark:hover:bg-zinc-900/15 transition-colors h-full min-h-[44px]">
+            <div className="flex justify-between items-center px-4 sm:px-6 md:px-8 py-3 hover:bg-zinc-50/50 dark:hover:bg-zinc-900/15 transition-colors h-full min-h-[44px]">
               <span className="text-zinc-400">Website</span>
               <a 
                 href={`https://${contactInfo.website}`}
@@ -213,7 +213,7 @@ export default function Hero() {
           <div className="flex flex-col justify-start">
             
             {/* Real-time active WIB Time */}
-            <div className="flex justify-between items-center border-b border-zinc-200 dark:border-zinc-800 px-5 py-3 hover:bg-zinc-50/50 dark:hover:bg-zinc-900/15 transition-colors">
+            <div className="flex justify-between items-center border-b border-zinc-200 dark:border-zinc-800 px-4 sm:px-6 md:px-8 py-3 hover:bg-zinc-50/50 dark:hover:bg-zinc-900/15 transition-colors">
               <span className="text-zinc-400">Abid's Time</span>
               <span className="text-zinc-900 dark:text-zinc-100 font-bold font-mono tracking-widest text-right flex items-center gap-1.5">
                 <span className="pulse-subtle text-green-500 text-[10px]" aria-hidden="true">●</span>
@@ -228,7 +228,7 @@ export default function Hero() {
                 setIsEmailRevealed(true);
                 copyToClipboard(contactInfo.email, 'Email address');
               }}
-              className="w-full flex justify-between items-center border-b border-zinc-200 dark:border-zinc-800 px-5 py-3 hover:bg-orange-50/5 hover:text-orange-500 group text-left cursor-pointer transition-colors"
+              className="w-full flex justify-between items-center border-b border-zinc-200 dark:border-zinc-800 px-4 sm:px-6 md:px-8 py-3 hover:bg-orange-50/5 hover:text-orange-500 group text-left cursor-pointer transition-colors"
               title={isEmailRevealed ? "Click to copy email address" : "Click to unmask & copy email"}
               aria-label={isEmailRevealed ? `Email: ${contactInfo.email}` : "Click to expose & copy email address"}
             >
@@ -252,7 +252,7 @@ export default function Hero() {
                 setIsPhoneRevealed(true);
                 copyToClipboard(contactInfo.phone, 'Phone number');
               }}
-              className="w-full flex justify-between items-center px-5 py-3 hover:bg-orange-50/5 hover:text-orange-500 group text-left cursor-pointer transition-colors h-full min-h-[44px]"
+              className="w-full flex justify-between items-center px-4 sm:px-6 md:px-8 py-3 hover:bg-orange-50/5 hover:text-orange-500 group text-left cursor-pointer transition-colors h-full min-h-[44px]"
               title={isPhoneRevealed ? "Click to copy phone number" : "Click to unmask & copy phone number"}
               aria-label={isPhoneRevealed ? `Phone: ${contactInfo.phone}` : "Click to expose & copy phone number"}
             >

@@ -21,7 +21,7 @@ export default function Experience() {
       <div className="grid grid-cols-1 md:grid-cols-12 border-b border-zinc-200 dark:border-zinc-800">
         
         {/* Left Column: Heading Zone */}
-        <div className="md:col-span-3 p-6 md:p-8 bg-zinc-50/20 dark:bg-zinc-900/10 border-b md:border-b-0 md:border-r border-zinc-200 dark:border-zinc-800">
+        <div className="md:col-span-3 p-4 sm:p-6 md:p-8 bg-zinc-50/20 dark:bg-zinc-900/10 border-b md:border-b-0 md:border-r border-zinc-200 dark:border-zinc-800">
           <div className="md:sticky md:top-20">
             <motion.div
               initial={{ opacity: 0, x: -10 }}
@@ -74,7 +74,7 @@ export default function Experience() {
               <div 
                 key={exp.company}
                 id={`exp-item-${companyId}`}
-                className={`border-b last:border-b-0 border-zinc-200 dark:border-zinc-800 p-6 md:p-8 relative transition-all duration-300 ${
+                className={`border-b last:border-b-0 border-zinc-200 dark:border-zinc-800 p-4 sm:p-6 md:p-8 relative transition-all duration-300 ${
                   selectedTag && !hasSelectedTag ? 'opacity-40 saturate-50' : 'opacity-100'
                 }`}
               >
