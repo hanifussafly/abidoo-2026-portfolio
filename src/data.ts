@@ -10,11 +10,11 @@ export const contactInfo: ContactInfo = {
   companyName: 'Aleph Labs',
   companyUrl: 'https://www.aleph-labs.com/',
   founderOf: 'PaceCard',
-  founderUrl: 'https://abido.framer.website/',
+  founderUrl: 'https://abidoo.space/',
   location: 'Jakarta, Indonesia',
   phone: '+6289613196277',
   email: 'hanifussafly@gmail.com',
-  website: 'abido.framer.website',
+  website: 'abidoo.space',
   pronouns: 'he/him',
 };
 
@@ -70,7 +70,7 @@ export const experienceData: ExperienceItem[] = [
         length: '6y 5m',
         tags: ['Product Design', 'User Experience (UX)', 'User Interface (UI) Design', 'Mobile Design', 'Design Systems', 'Figma'],
         details: [
-          'Delivered conversion-focused UX/UI for B2B, Fintech, and consumer products across Europe, the UK, and Southeast Asia.',
+          'Delivered conversion-focused UX/UI for B2B, Fintech, Real estate, and consumer products across Europe, US, and Southeast Asia.',
           'Launched and scaled the MyTel-U academic super-app and multi-product design systems serving over 15,000+ active users.'
         ],
       },
@@ -85,7 +85,7 @@ export const experienceData: ExperienceItem[] = [
     roles: [
       {
         title: 'UI/UX Designer',
-        type: 'Full-time',
+        type: 'Contract Full-Time',
         duration: '06.2025 - 12.2025',
         length: '6m',
         tags: ['User Experience (UX)', 'User Interface (UI) Design', 'Figma', 'Mobile Applications', 'E-Health', 'Collaboration'],
@@ -125,7 +125,7 @@ export const experienceData: ExperienceItem[] = [
     roles: [
       {
         title: 'UI/UX Designer',
-        type: 'Full-time',
+        type: 'Remote Full-Time',
         duration: '07.2021 - 08.2023',
         length: '2y 2m',
         tags: ['E-commerce', 'Shopify', 'Design Systems', 'Conversion Optimization', 'Web Design', 'User Interface (UI) Design'],
@@ -145,7 +145,7 @@ export const experienceData: ExperienceItem[] = [
     roles: [
       {
         title: 'UX Designer',
-        type: 'Full-time',
+        type: 'Remote Full-Time',
         duration: '01.2021 - 04.2021',
         length: '4m',
         tags: ['User Experience (UX)', 'Wireframing', 'Usability Testing', 'Gamification', 'Interaction Design'],
@@ -199,45 +199,52 @@ export const experienceData: ExperienceItem[] = [
 
 export const articlesData: ArticleItem[] = [
   {
+    title: 'Refining Robot Call for Operational Clarity',
+    author: 'Koikoll',
+    date: 'Operational Clarity UX',
+    url: 'https://abidoo.space/',
+    logoLetter: 'R',
+  },
+  {
     title: 'Welcoming Users the Right Way: Crafting an Effective Onboarding for EZCoordinator',
     author: 'EZCoordinator',
     date: 'UX Onboarding',
-    url: 'https://abido.framer.website/',
+    url: 'https://abidoo.space/',
     logoLetter: 'E',
   },
   {
     title: 'From Fashionvalet to dUCk & LILIT. : Crafting Prototypes for a Seamless Transition',
     author: 'Fashionvalet / dUCk / LILIT.',
     date: 'E-commerce Transition',
-    url: 'https://abido.framer.website/',
+    url: 'https://abidoo.space/',
     logoLetter: 'F',
   },
   {
     title: 'Simplified Telkom University Academic App - Study Case MyTel-U Mobile',
     author: 'Telkom University',
     date: 'Super App Case Study',
-    url: 'https://abido.framer.website/',
+    url: 'https://abidoo.space/',
     logoLetter: 'M',
   },
   {
     title: 'Enhancing shopping experience for dUCk - Research for PDP image ratio',
     author: 'dUCk Research',
     date: 'PDP Image Ratio Research',
-    url: 'https://abido.framer.website/',
+    url: 'https://abidoo.space/',
     logoLetter: 'D',
   },
   {
     title: 'Mola TV - Registration Flow with UGC',
     author: 'Mola TV',
     date: 'Registration UX Flow',
-    url: 'https://abido.framer.website/',
+    url: 'https://abidoo.space/',
     logoLetter: 'M',
   },
   {
     title: 'Niagahoster Landing Page Redesign with UCD',
     author: 'Niagahoster',
     date: 'UCD Redesign Framework',
-    url: 'https://abido.framer.website/',
+    url: 'https://abidoo.space/',
     logoLetter: 'N',
   },
 ];

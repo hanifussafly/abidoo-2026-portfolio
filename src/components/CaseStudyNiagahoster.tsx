@@ -230,7 +230,7 @@ export default function CaseStudyNiagahoster({ onBack, onNavigateCase }: CaseStu
               </p>
 
               <CaseImage 
-                src="/Public/niagahoster/prototype.png"
+                src="/niagahoster/prototype.png"
                 caption="Wireframe layout sketches representing structural components and pricing cards on the Homepage"
               />
             </div>
@@ -254,11 +254,11 @@ export default function CaseStudyNiagahoster({ onBack, onNavigateCase }: CaseStu
 
               <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                 <CaseImage 
-                  src="/Public/niagahoster/homepage-web.png"
+                  src="/niagahoster/homepage-web.png"
                   caption="High-Fidelity Web Presentation for the redesigned Homepage"
                 />
                 <CaseImage 
-                  src="/Public/niagahoster/homepage-android.png"
+                  src="/niagahoster/homepage-android.png"
                   caption="High-Fidelity Native Android Mobile Layout variant adaptation"
                 />
               </div>
@@ -409,7 +409,7 @@ export default function CaseStudyNiagahoster({ onBack, onNavigateCase }: CaseStu
               </button>
 
               <button
-                onClick={() => onNavigateCase?.('ezc-onboarding')}
+                onClick={() => onNavigateCase?.('robot-call')}
                 className="group p-5 text-left border border-zinc-200 dark:border-zinc-800 hover:border-zinc-400 dark:hover:border-zinc-650 rounded-none transition-all hover:bg-zinc-50/50 dark:hover:bg-zinc-900/5 flex flex-col gap-2 cursor-pointer"
               >
                 <div className="flex items-center justify-end gap-1 font-mono text-[10px] text-zinc-400 group-hover:text-zinc-600 dark:group-hover:text-zinc-300 uppercase tracking-widest transition-colors text-right">
@@ -417,7 +417,7 @@ export default function CaseStudyNiagahoster({ onBack, onNavigateCase }: CaseStu
                   <ArrowRight className="w-3 h-3 group-hover:translate-x-0.5 transition-transform" />
                 </div>
                 <h4 className="font-sans font-bold text-sm text-zinc-800 dark:text-zinc-200 group-hover:text-orange-500 transition-colors text-right line-clamp-2">
-                  Welcoming Users the Right Way: Crafting an Effective Onboarding for EZCoordinator
+                  Refining Robot Call for Operational Clarity
                 </h4>
               </button>
             </div>

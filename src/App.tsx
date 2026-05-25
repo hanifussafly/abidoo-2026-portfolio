@@ -19,12 +19,38 @@ import CaseStudyTelkom from './components/CaseStudyTelkom.tsx';
 import CaseStudyDuck from './components/CaseStudyDuck.tsx';
 import CaseStudyMola from './components/CaseStudyMola.tsx';
 import CaseStudyNiagahoster from './components/CaseStudyNiagahoster.tsx';
+import CaseStudyRobotCall from './components/CaseStudyRobotCall.tsx';
+import ImageZoomModal from './components/ImageZoomModal.tsx';
+
 
 export default function App() {
   const [dark, setDark] = useState(false);
   const [isSearchOpen, setIsSearchOpen] = useState(false);
   const [showLogo, setShowLogo] = useState(false);
   const [activeArticle, setActiveArticle] = useState<string | null>(null);
+  const [zoomImage, setZoomImage] = useState<{ src: string; alt: string } | null>(null);
+
+  // Global document image clicks observer to trigger case-study image zoom
+  useEffect(() => {
+    const handleImageTrigger = (e: MouseEvent) => {
+      const target = e.target as HTMLElement;
+      if (target && target.tagName === 'IMG') {
+        // Only target images displayed inside the main case-study body container (any <article>)
+        const article = target.closest('article');
+        if (article) {
+          const src = target.getAttribute('src');
+          const alt = target.getAttribute('alt') || '';
+          if (src) {
+            setZoomImage({ src, alt });
+          }
+        }
+      }
+    };
+
+    document.addEventListener('click', handleImageTrigger);
+    return () => document.removeEventListener('click', handleImageTrigger);
+  }, []);
+
 
   // Synchronize light/dark theme with local storage and html class list
   useEffect(() => {
@@ -135,6 +161,11 @@ export default function App() {
               onBack={() => setActiveArticle(null)}
               onNavigateCase={(slug) => setActiveArticle(slug)}
             />
+          ) : activeArticle === 'robot-call' ? (
+            <CaseStudyRobotCall
+              onBack={() => setActiveArticle(null)}
+              onNavigateCase={(slug) => setActiveArticle(slug)}
+            />
           ) : (
             <>
               {/* Section 1: Top cd pixel logo, avatar photo banner, contact credentials */}
@@ -201,6 +232,14 @@ export default function App() {
         onClose={() => setIsSearchOpen(false)} 
       />
 
+      {/* Global Image Inspector Modal */}
+      <ImageZoomModal 
+        src={zoomImage ? zoomImage.src : null}
+        alt={zoomImage ? zoomImage.alt : ''}
+        onClose={() => setZoomImage(null)}
+      />
+
     </div>
+
   );
 }

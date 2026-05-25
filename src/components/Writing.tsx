@@ -66,6 +66,9 @@ export default function Writing({ onSelectArticle }: WritingProps) {
                       } else if (article.title.toLowerCase().includes('niagahoster')) {
                         e.preventDefault();
                         onSelectArticle('niagahoster');
+                      } else if (article.title.toLowerCase().includes('robot call') || article.title.toLowerCase().includes('koikoll')) {
+                        e.preventDefault();
+                        onSelectArticle('robot-call');
                       }
                     }
                   }}

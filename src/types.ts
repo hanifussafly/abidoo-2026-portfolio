@@ -5,7 +5,7 @@
 
 export interface Role {
   title: string;
-  type: 'Full-time' | 'Part-time' | 'Contract' | 'Freelance';
+  type: 'Full-time' | 'Part-time' | 'Contract' | 'Freelance' | 'Contract Full-Time' | 'Remote Full-Time';
   duration: string; // e.g., "01.2026 - ∞"
   length: string;   // e.g., "5m", "2y 3m"
   tags: string[];
