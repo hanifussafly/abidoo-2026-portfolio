@@ -230,7 +230,7 @@ export default function CaseStudyNiagahoster({ onBack, onNavigateCase }: CaseStu
               </p>
 
               <CaseImage 
-                src="/niagahoster/prototype.png"
+                src="/Niagahoster%20Wireframe%20layout.png"
                 caption="Wireframe layout sketches representing structural components and pricing cards on the Homepage"
               />
             </div>
@@ -254,11 +254,11 @@ export default function CaseStudyNiagahoster({ onBack, onNavigateCase }: CaseStu
 
               <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                 <CaseImage 
-                  src="/niagahoster/homepage-web.png"
+                  src="/Niagahoster%20Homepage_Web.png"
                   caption="High-Fidelity Web Presentation for the redesigned Homepage"
                 />
                 <CaseImage 
-                  src="/niagahoster/homepage-android.png"
+                  src="/Niagahoster%20Hompage_Android.png"
                   caption="High-Fidelity Native Android Mobile Layout variant adaptation"
                 />
               </div>

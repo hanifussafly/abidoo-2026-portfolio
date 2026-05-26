@@ -11,9 +11,10 @@ import { socialLinks, experienceData, articlesData } from '../data.ts';
 interface CommandPaletteProps {
   isOpen: boolean;
   onClose: () => void;
+  onSelectArticle?: (slug: string) => void;
 }
 
-export default function CommandPalette({ isOpen, onClose }: CommandPaletteProps) {
+export default function CommandPalette({ isOpen, onClose, onSelectArticle }: CommandPaletteProps) {
   const [query, setQuery] = useState('');
   const [selectedIndex, setSelectedIndex] = useState(0);
   const inputRef = useRef<HTMLInputElement>(null);
@@ -103,7 +104,16 @@ export default function CommandPalette({ isOpen, onClose }: CommandPaletteProps)
     if ('action' in item && item.action) {
       item.action();
     } else if ('url' in item && item.url && item.url !== '#') {
-      window.open(item.url, '_blank', 'noopener,noreferrer');
+      if (item.url.startsWith('?case=')) {
+        const slug = item.url.replace('?case=', '');
+        if (onSelectArticle) {
+          onSelectArticle(slug);
+        } else {
+          window.location.search = `?case=${slug}`;
+        }
+      } else {
+        window.open(item.url, '_blank', 'noopener,noreferrer');
+      }
     } else {
       const el = document.getElementById(item.id);
       if (el) {

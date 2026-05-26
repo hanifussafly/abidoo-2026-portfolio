@@ -30,6 +30,35 @@ export default function App() {
   const [activeArticle, setActiveArticle] = useState<string | null>(null);
   const [zoomImage, setZoomImage] = useState<{ src: string; alt: string } | null>(null);
 
+  // Synchronize case study state from URL parameters on mount and browser navigation events
+  useEffect(() => {
+    const handleUrlSync = () => {
+      const params = new URLSearchParams(window.location.search);
+      const caseParam = params.get('case');
+      setActiveArticle(caseParam);
+    };
+
+    handleUrlSync();
+    window.addEventListener('popstate', handleUrlSync);
+    return () => window.removeEventListener('popstate', handleUrlSync);
+  }, []);
+
+  // Unified routing state engine that updates states, controls address bars, and scrolls pages cleanly
+  const handleSelectCaseStudy = (slug: string | null) => {
+    setActiveArticle(slug);
+    
+    const url = new URL(window.location.href);
+    if (slug) {
+      url.searchParams.set('case', slug);
+    } else {
+      url.searchParams.delete('case');
+    }
+    window.history.pushState({}, '', url.pathname + url.search);
+    
+    // Settle focus scroll smoothly to top
+    window.scrollTo({ top: 0, behavior: 'auto' });
+  };
+
   // Global document image clicks observer to trigger case-study image zoom
   useEffect(() => {
     const handleImageTrigger = (e: MouseEvent) => {
@@ -122,7 +151,7 @@ export default function App() {
         dark={dark} 
         toggleTheme={toggleTheme} 
         showLogo={showLogo}
-        onHomeClick={() => setActiveArticle(null)}
+        onHomeClick={() => handleSelectCaseStudy(null)}
       />
 
       {/* Center Drafting Board central layout container of width 5xl */}
@@ -133,38 +162,38 @@ export default function App() {
           
           {activeArticle === 'ezc-onboarding' ? (
             <CaseStudyEZC 
-              onBack={() => setActiveArticle(null)} 
-              onNavigateCase={(slug) => setActiveArticle(slug)}
+              onBack={() => handleSelectCaseStudy(null)} 
+              onNavigateCase={(slug) => handleSelectCaseStudy(slug)}
             />
           ) : activeArticle === 'fashionvalet' ? (
             <CaseStudyFV 
-              onBack={() => setActiveArticle(null)} 
-              onNavigateCase={(slug) => setActiveArticle(slug)}
+              onBack={() => handleSelectCaseStudy(null)} 
+              onNavigateCase={(slug) => handleSelectCaseStudy(slug)}
             />
           ) : activeArticle === 'telkom-university' ? (
             <CaseStudyTelkom 
-              onBack={() => setActiveArticle(null)} 
-              onNavigateCase={(slug) => setActiveArticle(slug)}
+              onBack={() => handleSelectCaseStudy(null)} 
+              onNavigateCase={(slug) => handleSelectCaseStudy(slug)}
             />
           ) : activeArticle === 'duck-research' ? (
             <CaseStudyDuck 
-              onBack={() => setActiveArticle(null)} 
-              onNavigateCase={(slug) => setActiveArticle(slug)}
+              onBack={() => handleSelectCaseStudy(null)} 
+              onNavigateCase={(slug) => handleSelectCaseStudy(slug)}
             />
           ) : activeArticle === 'mola-tv' ? (
             <CaseStudyMola 
-              onBack={() => setActiveArticle(null)} 
-              onNavigateCase={(slug) => setActiveArticle(slug)}
+              onBack={() => handleSelectCaseStudy(null)} 
+              onNavigateCase={(slug) => handleSelectCaseStudy(slug)}
             />
           ) : activeArticle === 'niagahoster' ? (
             <CaseStudyNiagahoster
-              onBack={() => setActiveArticle(null)}
-              onNavigateCase={(slug) => setActiveArticle(slug)}
+              onBack={() => handleSelectCaseStudy(null)}
+              onNavigateCase={(slug) => handleSelectCaseStudy(slug)}
             />
           ) : activeArticle === 'robot-call' ? (
             <CaseStudyRobotCall
-              onBack={() => setActiveArticle(null)}
-              onNavigateCase={(slug) => setActiveArticle(slug)}
+              onBack={() => handleSelectCaseStudy(null)}
+              onNavigateCase={(slug) => handleSelectCaseStudy(slug)}
             />
           ) : (
             <>
@@ -204,7 +233,7 @@ export default function App() {
                 viewport={{ once: true, margin: "-100px" }}
                 transition={{ duration: 0.6, ease: "easeOut" }}
               >
-                <Writing onSelectArticle={(slug) => setActiveArticle(slug)} />
+                <Writing onSelectArticle={(slug) => handleSelectCaseStudy(slug)} />
               </motion.div>
 
               {/* Section 5: Expandable timelines for job histories */}
@@ -230,6 +259,7 @@ export default function App() {
       <CommandPalette 
         isOpen={isSearchOpen} 
         onClose={() => setIsSearchOpen(false)} 
+        onSelectArticle={(slug) => handleSelectCaseStudy(slug)}
       />
 
       {/* Global Image Inspector Modal */}

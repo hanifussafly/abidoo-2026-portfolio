@@ -27,6 +27,7 @@ export interface ArticleItem {
   date: string;
   url: string;
   logoLetter: string; // Left circle indicator letter
+  slug?: string;      // The local routing slug
 }
 
 export interface SocialLink {
