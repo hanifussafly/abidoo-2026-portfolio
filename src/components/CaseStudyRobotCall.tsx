@@ -82,9 +82,6 @@ export default function CaseStudyRobotCall({ onBack, onNavigateCase }: CaseStudy
           <ArrowLeft className="w-3.5 h-3.5 group-hover:-translate-x-0.5 transition-transform" />
           <span>Back to Home</span>
         </button>
-        <span className="font-mono text-xs text-zinc-400 dark:text-zinc-505 uppercase tracking-widest hidden sm:inline">
-          Case Study // Operational Clarity
-        </span>
       </div>
 
       {/* Hero Header Block */}
@@ -228,7 +225,7 @@ export default function CaseStudyRobotCall({ onBack, onNavigateCase }: CaseStudy
               {/* Embedded Video Player 1 */}
               <div className="my-4 border border-zinc-200 dark:border-zinc-800 rounded-none overflow-hidden bg-zinc-950 aspect-video relative">
                 <iframe
-                  src="https://player.mux.com/R01eqVsMBBbsxlO9Ln9HrqUZB01YCTy1xIXDH4zIayFy00"
+                  src="https://player.mux.com/R01eqVsMBBbsxlO9Ln9HrqUZB01YCTy1xIXDH4zIayFy00?autoplay=1&muted=1&loop=1"
                   style={{ width: '100%', height: '100%', border: 'none' }}
                   allow="accelerometer; gyroscope; autoplay; encrypted-media; picture-in-picture;"
                   allowFullScreen
@@ -369,7 +366,7 @@ export default function CaseStudyRobotCall({ onBack, onNavigateCase }: CaseStudy
                 <div className="md:col-span-12 flex flex-col gap-1.5">
                   <div className="border border-zinc-200 dark:border-zinc-800 bg-zinc-50/50 p-2 text-center">
                     <img 
-                      src="/Robot%20Call%20IA.jpg" 
+                      src="/robot-call-information-architecture.jpg" 
                       alt="Information Architecture for Robot Call" 
                       className="w-full h-auto max-h-[400px] object-contain select-none"
                     />
@@ -383,7 +380,7 @@ export default function CaseStudyRobotCall({ onBack, onNavigateCase }: CaseStudy
                 <div className="md:col-span-6 flex flex-col gap-1.5 mt-2">
                   <div className="border border-zinc-200 dark:border-zinc-800 bg-zinc-50/50 p-2 text-center">
                     <img 
-                      src="/RobotCall%20FlowChart%20Add%20Scenario.jpg" 
+                      src="/robot-call-flowchart-add-scenario.jpg" 
                       alt="Flow-Chart - Add (Create) Scenario" 
                       className="w-full h-auto max-h-[380px] object-contain select-none"
                     />
@@ -396,7 +393,7 @@ export default function CaseStudyRobotCall({ onBack, onNavigateCase }: CaseStudy
                 <div className="md:col-span-6 flex flex-col gap-1.5 mt-2">
                   <div className="border border-zinc-200 dark:border-zinc-800 bg-zinc-50/50 p-2 text-center">
                     <img 
-                      src="/Robot%20Call%20FlowChart%20Add%20Campaign.jpg" 
+                      src="/robot-call-flowchart-add-campaign.jpg" 
                       alt="Flow Chart - Create Campaign" 
                       className="w-full h-auto max-h-[380px] object-contain select-none"
                     />
@@ -423,7 +420,7 @@ export default function CaseStudyRobotCall({ onBack, onNavigateCase }: CaseStudy
               {/* Embedded Video Player 2 */}
               <div className="my-4 border border-zinc-200 dark:border-zinc-800 rounded-none overflow-hidden bg-zinc-950 aspect-video relative">
                 <iframe
-                  src="https://player.mux.com/fgVqmaTTx2pfWUCuVZVxIMKTSdNWQQOfeqomL01vQI54"
+                  src="https://player.mux.com/fgVqmaTTx2pfWUCuVZVxIMKTSdNWQQOfeqomL01vQI54?autoplay=1&muted=1&loop=1"
                   style={{ width: '100%', height: '100%', border: 'none' }}
                   allow="accelerometer; gyroscope; autoplay; encrypted-media; picture-in-picture;"
                   allowFullScreen
@@ -486,7 +483,7 @@ export default function CaseStudyRobotCall({ onBack, onNavigateCase }: CaseStudy
               
               {/* Core visual showing before and after comparison */}
               <FramerImage 
-                src="/RobotCall%20Scenario%20Before-After.png"
+                src="/robot-call-scenario-before-after.png"
                 caption="Before and After on Robot Call (Previously IVR)"
               />
 
@@ -544,7 +541,7 @@ export default function CaseStudyRobotCall({ onBack, onNavigateCase }: CaseStudy
               {/* Embedded Video Player 3: Whitespace walkthrough */}
               <div className="my-6 border border-zinc-200 dark:border-zinc-800 rounded-none overflow-hidden bg-zinc-950 aspect-video relative">
                 <iframe
-                  src="https://player.mux.com/MUfzyQ00e8bwoP5DoVsQPnxiE7bEMfhYcT2TbhueC2iI"
+                  src="https://player.mux.com/MUfzyQ00e8bwoP5DoVsQPnxiE7bEMfhYcT2TbhueC2iI?autoplay=1&muted=1&loop=1"
                   style={{ width: '100%', height: '100%', border: 'none' }}
                   allow="accelerometer; gyroscope; autoplay; encrypted-media; picture-in-picture;"
                   allowFullScreen
@@ -565,7 +562,7 @@ export default function CaseStudyRobotCall({ onBack, onNavigateCase }: CaseStudy
               {/* Embedded Video Player 4: Mandarin Localized Walkthrough */}
               <div className="my-6 border border-zinc-200 dark:border-zinc-800 rounded-none overflow-hidden bg-zinc-950 aspect-video relative">
                 <iframe
-                  src="https://player.mux.com/vqFqZxULd7fmDKjg00cFXpGQ7JEuIAds5ybUgrnyQgKY"
+                  src="https://player.mux.com/vqFqZxULd7fmDKjg00cFXpGQ7JEuIAds5ybUgrnyQgKY?autoplay=1&muted=1&loop=1"
                   style={{ width: '100%', height: '100%', border: 'none' }}
                   allow="accelerometer; gyroscope; autoplay; encrypted-media; picture-in-picture;"
                   allowFullScreen

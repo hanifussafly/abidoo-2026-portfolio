@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <!-- Homepage -->
+  <url>
+    <loc>https://abidoo.space/</loc>
+    <lastmod>2026-05-31</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.00</priority>
+  </url>
+  <!-- Robot Call Case Study -->
+  <url>
+    <loc>https://abidoo.space/?case=robot-call</loc>
+    <lastmod>2026-05-31</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.80</priority>
+  </url>
+  <!-- EZCoordinator Onboarding Case Study -->
+  <url>
+    <loc>https://abidoo.space/?case=ezc-onboarding</loc>
+    <lastmod>2026-05-31</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.80</priority>
+  </url>
+  <!-- Fashionvalet Transition Case Study -->
+  <url>
+    <loc>https://abidoo.space/?case=fashionvalet</loc>
+    <lastmod>2026-05-31</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.80</priority>
+  </url>
+  <!-- Telkom University Case Study -->
+  <url>
+    <loc>https://abidoo.space/?case=telkom-university</loc>
+    <lastmod>2026-05-31</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <!-- Duck PDP Image Ratio Research Case Study -->
+  <url>
+    <loc>https://abidoo.space/?case=duck-research</loc>
+    <lastmod>2026-05-31</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.80</priority>
+  </url>
+  <!-- Mola TV Registration UGC Case Study -->
+  <url>
+    <loc>https://abidoo.space/?case=mola-tv</loc>
+    <lastmod>2026-05-31</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.80</priority>
+  </url>
+  <!-- Niagahoster Homepage UCD Case Study -->
+  <url>
+    <loc>https://abidoo.space/?case=niagahoster</loc>
+    <lastmod>2026-05-31</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.80</priority>
+  </url>
+</urlset>

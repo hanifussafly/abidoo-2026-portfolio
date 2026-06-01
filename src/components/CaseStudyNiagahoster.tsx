@@ -57,9 +57,6 @@ export default function CaseStudyNiagahoster({ onBack, onNavigateCase }: CaseStu
           <ArrowLeft className="w-3.5 h-3.5 group-hover:-translate-x-0.5 transition-transform" />
           <span>Back to Home</span>
         </button>
-        <span className="font-mono text-xs text-zinc-400 dark:text-zinc-500 uppercase tracking-widest">
-          Case Study // Niagahoster Redesign
-        </span>
       </div>
 
       {/* Hero Header Block */}
@@ -230,7 +227,7 @@ export default function CaseStudyNiagahoster({ onBack, onNavigateCase }: CaseStu
               </p>
 
               <CaseImage 
-                src="/Niagahoster%20Wireframe%20layout.png"
+                src="/niagahoster-homepage-wireframe-layout.png"
                 caption="Wireframe layout sketches representing structural components and pricing cards on the Homepage"
               />
             </div>
@@ -254,11 +251,11 @@ export default function CaseStudyNiagahoster({ onBack, onNavigateCase }: CaseStu
 
               <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                 <CaseImage 
-                  src="/Niagahoster%20Homepage_Web.png"
+                  src="/niagahoster-web-homepage-redesign.png"
                   caption="High-Fidelity Web Presentation for the redesigned Homepage"
                 />
                 <CaseImage 
-                  src="/Niagahoster%20Hompage_Android.png"
+                  src="/niagahoster-android-homepage-redesign.png"
                   caption="High-Fidelity Native Android Mobile Layout variant adaptation"
                 />
               </div>

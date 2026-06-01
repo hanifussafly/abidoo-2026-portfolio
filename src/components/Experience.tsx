@@ -21,7 +21,7 @@ export default function Experience() {
       <div className="grid grid-cols-1 md:grid-cols-12 border-b border-zinc-200 dark:border-zinc-800">
         
         {/* Left Column: Heading Zone */}
-        <div className="md:col-span-3 p-4 sm:p-6 md:p-8 bg-zinc-50/20 dark:bg-zinc-900/10 border-b md:border-b-0 md:border-r border-zinc-200 dark:border-zinc-800">
+        <div className="md:col-span-3 p-5 bg-zinc-50/20 dark:bg-zinc-900/10 border-b md:border-b-0 md:border-r border-zinc-200 dark:border-zinc-800">
           <div className="md:sticky md:top-20">
             <motion.div
               initial={{ opacity: 0, x: -10 }}
@@ -74,7 +74,7 @@ export default function Experience() {
               <div 
                 key={exp.company}
                 id={`exp-item-${companyId}`}
-                className={`border-b last:border-b-0 border-zinc-200 dark:border-zinc-800 p-4 sm:p-6 md:p-8 relative transition-all duration-300 ${
+                className={`border-b last:border-b-0 border-zinc-200 dark:border-zinc-800 p-5 relative transition-all duration-300 ${
                   selectedTag && !hasSelectedTag ? 'opacity-40 saturate-50' : 'opacity-100'
                 }`}
               >
@@ -101,11 +101,15 @@ export default function Experience() {
                       <span className="font-display font-bold text-lg sm:text-xl text-zinc-950 dark:text-zinc-50 group-hover:text-orange-500 transition-colors">
                         {exp.company}
                       </span>
-                      {/* Active green/blue glowing dot matching Image 2 */}
+                      {/* Active green dot indicator */}
                       {exp.active && (
-                        <span className="inline-flex items-center gap-1 font-mono text-[9px] text-zinc-500 font-semibold bg-zinc-50 dark:bg-zinc-900 px-1.5 py-0.5 rounded-none border border-zinc-250 dark:border-zinc-800">
-                          <span className="w-1.5 h-1.5 rounded-full bg-emerald-500 animate-pulse" />
-                          <span>Active</span>
+                        <span 
+                          className="relative flex h-2 w-2 ml-1" 
+                          aria-label="Active status indicator"
+                          title="Active"
+                        >
+                          <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75" />
+                          <span className="relative inline-flex rounded-full h-2 w-2 bg-emerald-500" />
                         </span>
                       )}
                     </div>

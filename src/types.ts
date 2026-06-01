@@ -28,6 +28,7 @@ export interface ArticleItem {
   url: string;
   logoLetter: string; // Left circle indicator letter
   slug?: string;      // The local routing slug
+  impact?: string;    // Short description showing impact
 }
 
 export interface SocialLink {

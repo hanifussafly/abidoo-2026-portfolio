@@ -420,9 +420,6 @@ export default function CaseStudyMola({ onBack, onNavigateCase }: CaseStudyMolaP
           <ArrowLeft className="w-3.5 h-3.5 group-hover:-translate-x-0.5 transition-transform" />
           <span>Back to Home</span>
         </button>
-        <span className="font-mono text-xs text-zinc-400 dark:text-zinc-500 uppercase tracking-widest">
-          Case Study // Mola TV Redesign
-        </span>
       </div>
 
       {/* Hero Header Block */}
@@ -609,11 +606,11 @@ export default function CaseStudyMola({ onBack, onNavigateCase }: CaseStudyMolaP
               
               <div className="flex flex-col gap-6 my-4">
                 <CaseImage 
-                  src="/Mola%20Flow%20User%20Baru.png"
+                  src="/mola-tv-new-user-flow.png"
                   caption="Scenario A: Complete user onboarding flow for first-time registrants"
                 />
                 <CaseImage 
-                  src="/Mola%20Flow%20User%20Lama.png"
+                  src="/mola-tv-returning-user-flow.png"
                   caption="Scenario B: Seamless update check flow for pre-existing active users"
                 />
               </div>
@@ -623,7 +620,7 @@ export default function CaseStudyMola({ onBack, onNavigateCase }: CaseStudyMolaP
               </p>
 
               <CaseImage 
-                src="/Mola%20Wireframe.png"
+                src="/mola-tv-registration-wireframes.png"
                 caption="Low-fidelity wireframe blueprints outlining screen layouts"
               />
 
@@ -663,14 +660,14 @@ export default function CaseStudyMola({ onBack, onNavigateCase }: CaseStudyMolaP
                   </p>
                 </div>
                 <div className="max-w-xs mx-auto md:max-w-none w-full">
-                  <CaseImage src="/Mola%20Sign%20In%20and%20Sign%20up.png" caption="Clean, high-contrast entry login portal" />
+                  <CaseImage src="/mola-tv-sign-in-up-onboarding.png" caption="Clean, high-contrast entry login portal" />
                 </div>
               </div>
 
               {/* Hifi 2: Walkthrough 1 */}
               <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center border-t border-zinc-100 dark:border-zinc-800 pt-6">
                 <div className="max-w-xs mx-auto md:max-w-none w-full order-2 md:order-1">
-                  <CaseImage src="/Mola%20Walkthrough%201.png" caption="Onboarding grid selection pattern" />
+                  <CaseImage src="/mola-tv-onboarding-genres-grid.png" caption="Onboarding grid selection pattern" />
                 </div>
                 <div className="order-1 md:order-2">
                   <h3 className="font-sans font-bold text-zinc-850 dark:text-zinc-100 text-base mb-1.5">Walkthrough Phase 1: Favorite Content</h3>
@@ -689,14 +686,14 @@ export default function CaseStudyMola({ onBack, onNavigateCase }: CaseStudyMolaP
                   </p>
                 </div>
                 <div className="max-w-xs mx-auto md:max-w-none w-full">
-                  <CaseImage src="/Mola%20Walkthrough%202.png" caption="Targeted payment bundle recommendation" />
+                  <CaseImage src="/mola-tv-onboarding-subscription-bundles.png" caption="Targeted payment bundle recommendation" />
                 </div>
               </div>
 
               {/* Hifi 4: Walkthrough 3 */}
               <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center border-t border-zinc-100 dark:border-zinc-800 pt-6">
                 <div className="max-w-xs mx-auto md:max-w-none w-full order-2 md:order-1">
-                  <CaseImage src="/Mola%20Walkthrough%203.png" caption="Team-level sports tracking onboarding" />
+                  <CaseImage src="/mola-tv-onboarding-sports-teams.png" caption="Team-level sports tracking onboarding" />
                 </div>
                 <div className="order-1 md:order-2">
                   <h3 className="font-sans font-bold text-zinc-850 dark:text-zinc-100 text-base mb-1.5">Walkthrough Phase 3: Team-Level Customization</h3>
@@ -732,23 +729,23 @@ export default function CaseStudyMola({ onBack, onNavigateCase }: CaseStudyMolaP
                   </ul>
                 </div>
                 <div className="md:col-span-5 max-w-xs mx-auto md:max-w-none w-full">
-                  <CaseImage src="/Mola%20Beranda.png" caption="The Redesigned Mola TV Homepage layout" />
+                  <CaseImage src="/mola-tv-homepage-redesign.png" caption="The Redesigned Mola TV Homepage layout" />
                 </div>
               </div>
 
-              {/* Extra Hifi: Mola Features, Search and Profile details */}
+               {/* Extra Hifi: Mola Features, Search and Profile details */}
               <div className="grid grid-cols-1 md:grid-cols-3 gap-6 border-t border-zinc-100 dark:border-zinc-800 pt-6">
                 <div>
                   <h4 className="font-sans font-semibold text-zinc-850 dark:text-zinc-100 text-sm mb-1">Tailored Search Experience</h4>
-                  <CaseImage src="/Mola%20Search.png" caption="Fast real-time query results with active suggestions" />
+                  <CaseImage src="/mola-tv-search-suggestions.png" caption="Fast real-time query results with active suggestions" />
                 </div>
                 <div>
                   <h4 className="font-sans font-semibold text-zinc-850 dark:text-zinc-100 text-sm mb-1">Section and Featured Highlights</h4>
-                  <CaseImage src="/Mola%20Section%20Feature.png" caption="High-fidelity display of active content feature blocks" />
+                  <CaseImage src="/mola-tv-featured-content-blocks.png" caption="High-fidelity display of active content feature blocks" />
                 </div>
                 <div>
                   <h4 className="font-sans font-semibold text-zinc-850 dark:text-zinc-100 text-sm mb-1">User Profile & Subscriptions Interface</h4>
-                  <CaseImage src="/Mola%20Profile.png" caption="Polished account status and bundle levels page code" />
+                  <CaseImage src="/mola-tv-profile-account-settings.png" caption="Polished account status and bundle levels page code" />
                 </div>
               </div>
 

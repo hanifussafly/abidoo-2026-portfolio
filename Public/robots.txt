@@ -1,0 +1,14 @@
+# https://www.robotstxt.org/db.html
+
+User-agent: *
+Allow: /
+Allow: /src/avatar.jpeg
+Allow: /Public/*.png
+Allow: /Public/*.jpg
+Allow: /Public/*.svg
+Allow: /Public/*.webp
+Disallow: /node_modules/
+Disallow: /dist/
+
+# Define active sitemap locations
+Sitemap: https://abidoo.space/sitemap.xml

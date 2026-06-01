@@ -14,10 +14,10 @@ interface WritingProps {
 
 const previewImages: Record<string, string[]> = {
   'robot-call': [
-    '/RobotCall%20Scenario%20Before-After.png',
-    '/Robot%20Call%20IA.jpg',
-    '/RobotCall%20FlowChart%20Add%20Scenario.jpg',
-    '/Robot%20Call%20FlowChart%20Add%20Campaign.jpg'
+    '/robot-call-scenario-before-after.png',
+    '/robot-call-information-architecture.jpg',
+    '/robot-call-flowchart-add-scenario.jpg',
+    '/robot-call-flowchart-add-campaign.jpg'
   ],
   'ezc-onboarding': [
     'https://framerusercontent.com/images/7sJSSp4SvfnbBQ06bQN7huINfc.png?width=600',
@@ -45,22 +45,22 @@ const previewImages: Record<string, string[]> = {
     'https://framerusercontent.com/images/RL7uS9pF1XCKSarnRnYeLILMG4I.png?width=600'
   ],
   'mola-tv': [
-    '/Mola%20Beranda.png',
-    '/Mola%20Sign%20In%20and%20Sign%20up.png',
-    '/Mola%20Walkthrough%201.png',
-    '/Mola%20Walkthrough%202.png',
-    '/Mola%20Walkthrough%203.png',
-    '/Mola%20Flow%20User%20Baru.png',
-    '/Mola%20Flow%20User%20Lama.png',
-    '/Mola%20Wireframe.png',
-    '/Mola%20Search.png',
-    '/Mola%20Profile.png',
-    '/Mola%20Section%20Feature.png'
+    '/mola-tv-homepage-redesign.png',
+    '/mola-tv-sign-in-up-onboarding.png',
+    '/mola-tv-onboarding-genres-grid.png',
+    '/mola-tv-onboarding-subscription-bundles.png',
+    '/mola-tv-onboarding-sports-teams.png',
+    '/mola-tv-new-user-flow.png',
+    '/mola-tv-returning-user-flow.png',
+    '/mola-tv-registration-wireframes.png',
+    '/mola-tv-search-suggestions.png',
+    '/mola-tv-profile-account-settings.png',
+    '/mola-tv-featured-content-blocks.png'
   ],
   'niagahoster': [
-    '/Niagahoster%20Wireframe%20layout.png',
-    '/Niagahoster%20Homepage_Web.png',
-    '/Niagahoster%20Hompage_Android.png'
+    '/niagahoster-homepage-wireframe-layout.png',
+    '/niagahoster-web-homepage-redesign.png',
+    '/niagahoster-android-homepage-redesign.png'
   ]
 };
 
@@ -120,7 +120,7 @@ export default function Writing({ onSelectArticle }: WritingProps) {
       <div className="grid grid-cols-1 md:grid-cols-12 border-b border-zinc-200 dark:border-zinc-800">
         
         {/* Left Column: Heading Zone */}
-        <div className="md:col-span-3 p-4 sm:p-6 md:p-8 bg-zinc-50/20 dark:bg-zinc-900/10 border-b md:border-b-0 md:border-r border-zinc-200 dark:border-zinc-800">
+        <div className="md:col-span-3 p-5 bg-zinc-50/20 dark:bg-zinc-900/10 border-b md:border-b-0 md:border-r border-zinc-200 dark:border-zinc-800">
           <motion.div
             initial={{ opacity: 0, x: -10 }}
             whileInView={{ opacity: 1, x: 0 }}
@@ -171,11 +171,11 @@ export default function Writing({ onSelectArticle }: WritingProps) {
                         {article.title}
                       </h3>
                       
-                      <div className="font-mono text-[10px] sm:text-xs text-zinc-400 dark:text-zinc-500 mt-1 flex items-center gap-1.5 uppercase tracking-wide">
-                        <span>{article.author}</span>
-                        <span>//</span>
-                        <span>{article.date}</span>
-                      </div>
+                      {article.impact && (
+                        <p className="font-sans text-xs sm:text-sm text-zinc-500 dark:text-zinc-400 mt-1 sm:mt-1.5 leading-relaxed font-normal">
+                          {article.impact}
+                        </p>
+                      )}
                     </div>
                   </div>
 

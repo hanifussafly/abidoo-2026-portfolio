@@ -21,6 +21,7 @@ import CaseStudyMola from './components/CaseStudyMola.tsx';
 import CaseStudyNiagahoster from './components/CaseStudyNiagahoster.tsx';
 import CaseStudyRobotCall from './components/CaseStudyRobotCall.tsx';
 import ImageZoomModal from './components/ImageZoomModal.tsx';
+import SEO from './components/SEO.tsx';
 
 
 export default function App() {
@@ -140,6 +141,9 @@ export default function App() {
   return (
     <div className="min-h-screen bg-zinc-50 dark:bg-zinc-900 text-zinc-900 dark:text-zinc-100 transition-colors duration-300 relative font-sans antialiased overflow-x-hidden">
       
+      {/* Dynamic SEO Head & Schema JSON-LD Injection Layer */}
+      <SEO activeCase={activeArticle} />
+
       {/* WCAG compliant skip navigation link to aid accessibility */}
       <a href="#main-content" className="skip-link font-mono text-xs font-semibold uppercase tracking-wider">
         Skip to main content

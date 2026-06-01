@@ -205,6 +205,7 @@ export const articlesData: ArticleItem[] = [
     url: '?case=robot-call',
     slug: 'robot-call',
     logoLetter: 'R',
+    impact: 'Reduced onboarding visual clutter, clarified action steps, and improved B2B team handoff flow.',
   },
   {
     title: 'Welcoming Users the Right Way: Crafting an Effective Onboarding for EZCoordinator',
@@ -213,6 +214,7 @@ export const articlesData: ArticleItem[] = [
     url: '?case=ezc-onboarding',
     slug: 'ezc-onboarding',
     logoLetter: 'E',
+    impact: 'Simplified real estate agent transactions by designing custom checklist walkthroughs and progress indicators.',
   },
   {
     title: 'From Fashionvalet to dUCk & LILIT. : Crafting Prototypes for a Seamless Transition',
@@ -221,6 +223,7 @@ export const articlesData: ArticleItem[] = [
     url: '?case=fashionvalet',
     slug: 'fashionvalet',
     logoLetter: 'F',
+    impact: 'Successfully onboarded around 400,000 users from Fashionvalet to sign up at dUCk and LILIT.',
   },
   {
     title: 'Simplified Telkom University Academic App - Study Case MyTel-U Mobile',
@@ -229,6 +232,7 @@ export const articlesData: ArticleItem[] = [
     url: '?case=telkom-university',
     slug: 'telkom-university',
     logoLetter: 'M',
+    impact: 'Launched academic super-app and campus design systems, scaling to serve over 15,000+ active university users daily.',
   },
   {
     title: 'Enhancing shopping experience for dUCk - Research for PDP image ratio',
@@ -237,6 +241,7 @@ export const articlesData: ArticleItem[] = [
     url: '?case=duck-research',
     slug: 'duck-research',
     logoLetter: 'D',
+    impact: 'Established standard 2:3 image formats using targeted competitor analysis to optimize PDP device consistency.',
   },
   {
     title: 'Mola TV - Registration Flow with UGC',
@@ -245,6 +250,7 @@ export const articlesData: ArticleItem[] = [
     url: '?case=mola-tv',
     slug: 'mola-tv',
     logoLetter: 'M',
+    impact: 'Designed customized registration pathways and bottom menu system to increase active subscriber retention.',
   },
   {
     title: 'Niagahoster Landing Page Redesign with UCD',
@@ -253,5 +259,6 @@ export const articlesData: ArticleItem[] = [
     url: '?case=niagahoster',
     slug: 'niagahoster',
     logoLetter: 'N',
+    impact: 'Redesigned homepage interfaces using User-Centered Design (UCD) frameworks to build rigid responsive multi-device consistency.',
   },
 ];

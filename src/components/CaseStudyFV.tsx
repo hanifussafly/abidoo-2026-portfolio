@@ -100,9 +100,6 @@ export default function CaseStudyFV({ onBack, onNavigateCase }: CaseStudyFVProps
           <ArrowLeft className="w-3.5 h-3.5 group-hover:-translate-x-0.5 transition-transform" />
           <span>Back to Home</span>
         </button>
-        <span className="font-mono text-xs text-zinc-400 dark:text-zinc-500 uppercase tracking-widest">
-          Case Study // Fashionvalet Sunset
-        </span>
       </div>
 
       {/* Hero Header Block */}

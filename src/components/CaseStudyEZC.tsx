@@ -118,9 +118,6 @@ export default function CaseStudyEZC({ onBack, onNavigateCase }: CaseStudyEZCPro
           <ArrowLeft className="w-3.5 h-3.5 group-hover:-translate-x-0.5 transition-transform" />
           <span>Back to Home</span>
         </button>
-        <span className="font-mono text-xs text-zinc-400 dark:text-zinc-500 uppercase tracking-widest">
-          Case Study // EZCoordinator Onboarding
-        </span>
       </div>
 
       {/* Hero Header Block */}
@@ -494,8 +491,17 @@ export default function CaseStudyEZC({ onBack, onNavigateCase }: CaseStudyEZCPro
                 After several feedback from the stakeholder, we decided to go with Checklist and Progress Bar with Video. Because it doesn't require specific actions to go to the screens, hence it is easier to implement on the front-end side.
               </blockquote>
               <p>
-                Since I developed this portfolio, they haven't proceeded with releasing this onboarding yet.
+                The checklist guidelines and onboarding flow successfully achieved stakeholder sign-off and were prepared for implementation. By delivering a design that does not require custom, complex screen-to-screen navigation, we established a clear, low-barrier pathway that reduced engineering complexity and minimized future development hours.
               </p>
+
+              <div className="flex flex-col gap-2 mt-4">
+                <h3 className="font-bold text-xs text-zinc-800 dark:text-zinc-200 uppercase font-mono tracking-wide">Expected Impact for Users:</h3>
+                <ul className="list-disc pl-5 flex flex-col gap-2 text-zinc-650 dark:text-zinc-300 text-sm sm:text-base leading-relaxed">
+                  <li><strong>Structured Onboarding Roadmap:</strong> Provides new real estate agents with an intuitive step-by-step checklist directly upon logging in, removing the guesswork of navigating a complex interface.</li>
+                  <li><strong>Reduced Interface Friction:</strong> Staged visual progress indicators help prevent information overload, helping users stay focused and reducing setup drop-offs.</li>
+                  <li><strong>Faster Product Adoption:</strong> Guides agents to complete key setup tasks and initiate their very first transaction confidently and error-free.</li>
+                </ul>
+              </div>
             </div>
           </section>
 

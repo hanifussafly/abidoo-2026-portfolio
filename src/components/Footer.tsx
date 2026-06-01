@@ -50,7 +50,7 @@ export default function Footer() {
         <div className="col-span-1 md:col-span-3 border-r-0 md:border-r border-b md:border-b-0 border-zinc-200 dark:border-zinc-800 bg-transparent hidden md:block select-none" />
 
         {/* Right Side: Footer Content and pill indicators inside col-span-9 */}
-        <div className="col-span-1 md:col-span-9 p-4 sm:p-6 md:p-8 lg:p-10 flex flex-col items-center justify-center text-center gap-6 bg-white dark:bg-zinc-950">
+        <div className="col-span-1 md:col-span-9 p-5 flex flex-col items-center justify-center text-center gap-6 bg-white dark:bg-zinc-950">
           
           {/* Attributions and Inspired Credits */}
           <div className="flex flex-col gap-2 max-w-xl">
